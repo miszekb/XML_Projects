@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<car_database>
+	<samochód1>
+		<marka>Volkswagen</marka>
+		<model>Sharan</model>
+		<rocznik>2008</rocznik>
+		<typ>Minivan</typ>
+		<przebieg>248000</przebieg>
+		<rodzaj_silnika>Diesel</rodzaj_silnika>
+		<pojemność_silnika>1.8</pojemność_silnika>
+		<cena>26700</cena>
+		<data_umieszczenia_ogłoszenia>2018-12-30</data_umieszczenia_ogłoszenia>
+	</samochód1>
+
+	<marka>Ford</marka>
+	<model>Fiesta</model>
+	<rocznik>2013</rocznik>
+	<typ>Kompakt</typ>
+	<przebieg>38643</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>1.2</pojemność_silnika>
+	<cena>33000</cena>
+	<data_umieszczenia_ogłoszenia>2019-01-20</data_umieszczenia_ogłoszenia>
+
+	<marka>Toyota</marka>
+	<model>Auris</model>
+	<rocznik>2016</rocznik>
+	<typ>Kombi</typ>
+	<przebieg>59500</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>1.6</pojemność_silnika>
+	<cena>52900</cena>
+	<data_umieszczenia_ogłoszenia>2018-11-27</data_umieszczenia_ogłoszenia>
+
+	<marka>Audi</marka>
+	<model>A4</model>
+	<rocznik>2018</rocznik>
+	<typ>Kombi</typ>
+	<przebieg>1</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>3.2</pojemność_silnika>
+	<cena>165914</cena>
+	<data_umieszczenia_ogłoszenia>2018-10-19</data_umieszczenia_ogłoszenia>
+
+	<marka>BMW</marka>
+	<model>X6</model>
+	<rocznik>2008</rocznik>
+	<typ>SUV</typ>
+	<przebieg>110000</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>4.0</pojemność_silnika>
+	<cena>89900</cena>
+	<data_umieszczenia_ogłoszenia>2019-02-04</data_umieszczenia_ogłoszenia>
+
+	<marka>Mini</marka>
+	<model>Cooper S</model>
+	<rocznik>2007</rocznik>
+	<typ>Auta małe</typ>
+	<przebieg>150000</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>0.8</pojemność_silnika>
+	<cena>30000</cena>
+	<data_umieszczenia_ogłoszenia>2019-03-03</data_umieszczenia_ogłoszenia>
+
+	<marka>Alfa Romeo</marka>
+	<model>Giulietta</model>
+	<rocznik>2012</rocznik>
+	<typ>Kompakt</typ>
+	<przebieg>144000</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>1.2</pojemność_silnika>
+	<cena>41800</cena>
+	<data_umieszczenia_ogłoszenia>2018-11-25</data_umieszczenia_ogłoszenia>
+
+	<marka>Volkswagen</marka>
+	<model>Touareg</model>
+	<rocznik>2010</rocznik>
+	<typ>SUV</typ>
+	<przebieg>367862</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>3.5</pojemność_silnika>
+	<cena>59500</cena>
+	<data_umieszczenia_ogłoszenia>2019-02-07</data_umieszczenia_ogłoszenia>
+
+	<marka>Jaguar</marka>
+	<model>F-Pace</model>
+	<rocznik>2018</rocznik>
+	<typ>SUV</typ>
+	<przebieg>5500</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>5.0</pojemność_silnika>
+	<cena>230000</cena>
+	<data_umieszczenia_ogłoszenia>2019-01-23</data_umieszczenia_ogłoszenia>
+
+	<marka>Jeep</marka>
+	<model>Grand Cherokee IV</model>
+	<rocznik>2011</rocznik>
+	<typ>SUV</typ>
+	<przebieg>196000</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>5.5</pojemność_silnika>
+	<cena>649000</cena>
+	<data_umieszczenia_ogłoszenia>2018-12-22</data_umieszczenia_ogłoszenia>
+
+	<marka>Iveco</marka>
+	<model>Magirus</model>
+	<rocznik>1984</rocznik>
+	<typ>Tir</typ>
+	<przebieg>436581</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>7.0</pojemność_silnika>
+	<cena>29000</cena>
+	<data_umieszczenia_ogłoszenia>2018-09-12</data_umieszczenia_ogłoszenia>
+
+	<marka>Skoda</marka>
+	<model>Fabia II</model>
+	<rocznik>2013</rocznik>
+	<typ>Kombi</typ>
+	<przebieg>167000</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>1.3</pojemność_silnika>
+	<cena>22555</cena>
+	<data_umieszczenia_ogłoszenia>2019-03-04</data_umieszczenia_ogłoszenia>]
+
+	<marka>Audi</marka>
+	<model>A6 C6</model>
+	<rocznik>2010</rocznik>
+	<typ>Sedan</typ>
+	<przebieg>162000</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>5.2</pojemność_silnika>
+	<cena>45900</cena>
+	<data_umieszczenia_ogłoszenia>2018-11-28</data_umieszczenia_ogłoszenia>
+
+	<marka>Mazda</marka>
+	<model>6 III</model>
+	<rocznik>2014</rocznik>
+	<typ>Sedan</typ>
+	<przebieg>223000</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>3.8</pojemność_silnika>
+	<cena>49500</cena>
+	<data_umieszczenia_ogłoszenia>2019-02-01</data_umieszczenia_ogłoszenia>
+
+	<marka>Nissan</marka>
+	<model>Qashqai II</model>
+	<rocznik>2018</rocznik>
+	<typ>SUV</typ>
+	<przebieg>1</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>2.9</pojemność_silnika>
+	<cena>91900</cena>
+	<data_umieszczenia_ogłoszenia>2018-12-09</data_umieszczenia_ogłoszenia>
+
+	<marka>Opel</marka>
+	<model>Astra K</model>
+	<rocznik>2018</rocznik>
+	<typ>Kombi</typ>
+	<przebieg>1</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>2.5</pojemność_silnika>
+	<cena>99900</cena>
+	<data_umieszczenia_ogłoszenia>2019-03-05</data_umieszczenia_ogłoszenia>
+
+	<marka>Man</marka>
+	<model>TGX</model>
+	<rocznik>2015</rocznik>
+	<typ>Tir</typ>
+	<przebieg>400000</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>8.1</pojemność_silnika>
+	<cena>120500</cena>
+	<data_umieszczenia_ogłoszenia>2018-10-30</data_umieszczenia_ogłoszenia>
+
+	<marka>Volkswagen</marka>
+	<model>Caravelle</model>
+	<rocznik>2018</rocznik>
+	<typ>Minivan</typ>
+	<przebieg>7</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>3.4</pojemność_silnika>
+	<cena>108060</cena>
+	<data_umieszczenia_ogłoszenia>2019-02-21</data_umieszczenia_ogłoszenia>
+
+	<marka>Kia</marka>
+	<model>Optima</model>
+	<rocznik>2015</rocznik>
+	<typ>Sedan</typ>
+	<przebieg>109870</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>3.1</pojemność_silnika>
+	<cena>58000</cena>
+	<data_umieszczenia_ogłoszenia>2018-11-26</data_umieszczenia_ogłoszenia>
+
+	<marka>Subaru</marka>
+	<model>Legacy IV</model>
+	<rocznik>2008</rocznik>
+	<typ>Kombi</typ>
+	<przebieg>294500</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>3.5</pojemność_silnika>
+	<cena>24900</cena>
+	<data_umieszczenia_ogłoszenia>2019-02-09</data_umieszczenia_ogłoszenia>
+
+	<marka>Fiat</marka>
+	<model>500</model>
+	<rocznik>2013</rocznik>
+	<typ>Auta małe</typ>
+	<przebieg>26556</przebieg>
+	<rodzaj_silnika>Elektryczny</rodzaj_silnika>
+	<pojemność_silnika> </pojemność_silnika>
+	<cena>68900</cena>
+	<data_umieszczenia_ogłoszenia>2018-12-21</data_umieszczenia_ogłoszenia>
+
+	<marka>Chevrolet</marka>
+	<model>Camaro</model>
+	<rocznik>2013</rocznik>
+	<typ>Coupe</typ>
+	<przebieg>94901</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>5.3</pojemność_silnika>
+	<cena>49999</cena>
+	<data_umieszczenia_ogłoszenia>2018-08-25</data_umieszczenia_ogłoszenia>
+
+	<marka>Opel</marka>
+	<model>Insignia B</model>
+	<rocznik>2017</rocznik>
+	<typ>Kombi</typ>
+	<przebieg>42600</przebieg>
+	<rodzaj_silnika>Diesel</rodzaj_silnika>
+	<pojemność_silnika>2.6</pojemność_silnika>
+	<cena>91900</cena>
+	<data_umieszczenia_ogłoszenia>2019-03-06</data_umieszczenia_ogłoszenia>
+
+	<marka>Fiat</marka>
+	<model>Diablo II</model>
+	<rocznik>2016</rocznik>
+	<typ>Minivan</typ>
+	<przebieg>59945</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>1.8</pojemność_silnika>
+	<cena>49900</cena>
+	<data_umieszczenia_ogłoszenia>2018-10-17</data_umieszczenia_ogłoszenia>
+
+	<marka>Porsche</marka>
+	<model>Panamera</model>
+	<rocznik>2017</rocznik>
+	<typ>Sedan</typ>
+	<przebieg>34000</przebieg>
+	<rodzaj_silnika>Benzyna</rodzaj_silnika>
+	<pojemność_silnika>5.5</pojemność_silnika>
+	<cena>624865</cena>
+	<data_umieszczenia_ogłoszenia>2018-09-11</data_umieszczenia_ogłoszenia>
+</car_database>
