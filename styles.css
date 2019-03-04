@@ -1,0 +1,27 @@
+autorzy {
+	background-color: #ACCCA3;
+	font-family: Verdana;
+	font-size: 20px;
+	border-width: 5px;
+	border-color: black;
+	text-align: center;
+}
+
+autor {
+	display: block; 
+	background-color: #ACCCA3;
+}
+
+baza {
+	background-color: #F7ECCE;
+	font-family: Calibri;
+	font-size: 16px;
+}
+
+samochód {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	background-color: #F7ECCE;
+
+}
