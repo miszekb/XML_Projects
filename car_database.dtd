@@ -1,0 +1,18 @@
+<!ELEMENT dokument (autorzy,baza)>
+   <!ELEMENT autorzy (autor)>
+      <!ELEMENT autor (#PCDATA)>
+         <!ATTLIST autor grupa_TGSK #PCDATA "-">
+         <!ATTLIST autor github #PCDATA "-">
+   <!ELEMENT baza (samochód+)>
+      <!ELEMENT samochód (marka,model,rocznik,typ,przebieg,rodzaj_silnika,pojemność_silnika, cena, data_umieszczenia_ogłoszenia)>
+         <!ELEMENT marka (#PCDATA)>
+            <!ATTLIST marka kraj #PCDATA "-">
+         <!ELEMENT model (#PCDATA)>
+         <!ELEMENT rocznik (#PCDATA)>
+         <!ELEMENT typ (#PCDATA)>
+         <!ELEMENT przebieg (#PCDATA)>
+         <!ELEMENT rodzaj_silnika (#PCDATA)>
+         <!ELEMENT pojemność_silnika (#PCDATA)>
+         <!ELEMENT cena (#PCDATA)>
+         <!ELEMENT data_umieszczenia_ogłoszenia (#PCDATA)>
+

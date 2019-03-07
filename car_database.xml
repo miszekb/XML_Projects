@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="styles.css" ?>
+<!DOCTYPE baza SYSTEM "car_database.dtd">
 <!-- XML Car Database created by Michał Mamona & Michał Białecki [2019]-->
 <dokument>
 	<autorzy>
-			<autor>Michał Mamona</autor>
-			<autor>Michał Białecki 210141</autor>
+			<autor grupa_TGSK="2" github="MickAlmighty">Michał Mamona 210266</autor>
+			<autor grupa_TGSK="1" github="miszekb">Michał Białecki 210141</autor>
 	</autorzy>
 	<baza>
 		<samochód>
-			<marka>Volkswagen</marka>
+			<marka kraj="Niemcy">Volkswagen</marka>
 			<model>Sharan</model>
 			<rocznik>2008</rocznik>
 			<typ>Minivan</typ>
@@ -19,7 +20,7 @@
 			<data_umieszczenia_ogłoszenia>2018-12-30</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Toyota</marka>
+			<marka kraj="Japonia">Toyota</marka>
 			<model>Auris</model>
 			<rocznik>2016</rocznik>
 			<typ>Kombi</typ>
@@ -30,7 +31,7 @@
 			<data_umieszczenia_ogłoszenia>2018-11-27</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Audi</marka>
+			<marka kraj="Niemcy">Audi</marka>
 			<model>A4</model>
 			<rocznik>2018</rocznik>
 			<typ>Kombi</typ>
@@ -41,7 +42,7 @@
 			<data_umieszczenia_ogłoszenia>2018-10-19</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>BMW</marka>
+			<marka kraj="Niemcy">BMW</marka>
 			<model>X6</model>
 			<rocznik>2008</rocznik>
 			<typ>SUV</typ>
@@ -52,7 +53,7 @@
 			<data_umieszczenia_ogłoszenia>2019-02-04</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Mini</marka>
+			<marka kraj="Wielka Brytania">Mini</marka>
 			<model>Cooper S</model>
 			<rocznik>2007</rocznik>
 			<typ>Auta małe</typ>
@@ -63,7 +64,7 @@
 			<data_umieszczenia_ogłoszenia>2019-03-03</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Alfa Romeo</marka>
+			<marka kraj="Włochy">Alfa Romeo</marka>
 			<model>Giulietta</model>
 			<rocznik>2012</rocznik>
 			<typ>Kompakt</typ>
@@ -74,7 +75,7 @@
 			<data_umieszczenia_ogłoszenia>2018-11-25</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Volkswagen</marka>
+			<marka kraj="Niemcy">Volkswagen</marka>
 			<model>Touareg</model>
 			<rocznik>2010</rocznik>
 			<typ>SUV</typ>
@@ -85,7 +86,7 @@
 			<data_umieszczenia_ogłoszenia>2019-02-07</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Jaguar</marka>
+			<marka kraj="Wielka Brytania">Jaguar</marka>
 			<model>F-Pace</model>
 			<rocznik>2018</rocznik>
 			<typ>SUV</typ>
@@ -96,7 +97,7 @@
 			<data_umieszczenia_ogłoszenia>2019-01-23</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Jeep</marka>
+			<marka kraj="Wielka Brytania">Jeep</marka>
 			<model>Grand Cherokee IV</model>
 			<rocznik>2011</rocznik>
 			<typ>SUV</typ>
@@ -107,7 +108,7 @@
 			<data_umieszczenia_ogłoszenia>2018-12-22</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Iveco</marka>
+			<marka kraj="Włochy">Iveco</marka>
 			<model>Magirus</model>
 			<rocznik>1984</rocznik>
 			<typ>Tir</typ>
@@ -118,7 +119,7 @@
 			<data_umieszczenia_ogłoszenia>2018-09-12</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Skoda</marka>
+			<marka kraj="Czechy">Skoda</marka>
 			<model>Fabia II</model>
 			<rocznik>2013</rocznik>
 			<typ>Kombi</typ>
@@ -129,7 +130,7 @@
 			<data_umieszczenia_ogłoszenia>2019-03-04</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Audi</marka>
+			<marka kraj="Niemcy">Audi</marka>
 			<model>A6 C6</model>
 			<rocznik>2010</rocznik>
 			<typ>Sedan</typ>
@@ -140,7 +141,7 @@
 			<data_umieszczenia_ogłoszenia>2018-11-28</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Mazda</marka>
+			<marka kraj="Japonia">Mazda</marka>
 			<model>6 III</model>
 			<rocznik>2014</rocznik>
 			<typ>Sedan</typ>
@@ -151,7 +152,7 @@
 			<data_umieszczenia_ogłoszenia>2019-02-01</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Nissan</marka>
+			<marka kraj="Japonia">Nissan</marka>
 			<model>Qashqai II</model>
 			<rocznik>2018</rocznik>
 			<typ>SUV</typ>
@@ -162,7 +163,7 @@
 			<data_umieszczenia_ogłoszenia>2018-12-09</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Opel</marka>
+			<marka kraj="Niemcy">Opel</marka>
 			<model>Astra K</model>
 			<rocznik>2018</rocznik>
 			<typ>Kombi</typ>
@@ -173,7 +174,7 @@
 			<data_umieszczenia_ogłoszenia>2019-03-05</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Man</marka>
+			<marka kraj="Niemcy">Man</marka>
 			<model>TGX</model>
 			<rocznik>2015</rocznik>
 			<typ>Tir</typ>
@@ -184,7 +185,7 @@
 			<data_umieszczenia_ogłoszenia>2018-10-30</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Volkswagen</marka>
+			<marka kraj="Niemcy">Volkswagen</marka>
 			<model>Caravelle</model>
 			<rocznik>2018</rocznik>
 			<typ>Minivan</typ>
@@ -195,7 +196,7 @@
 			<data_umieszczenia_ogłoszenia>2019-02-21</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Kia</marka>
+			<marka kraj="Korea">Kia</marka>
 			<model>Optima</model>
 			<rocznik>2015</rocznik>
 			<typ>Sedan</typ>
@@ -206,7 +207,7 @@
 			<data_umieszczenia_ogłoszenia>2018-11-26</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Subaru</marka>
+			<marka kraj="Japonia">Subaru</marka>
 			<model>Legacy IV</model>
 			<rocznik>2008</rocznik>
 			<typ>Kombi</typ>
@@ -217,7 +218,7 @@
 			<data_umieszczenia_ogłoszenia>2019-02-09</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Fiat</marka>
+			<marka kraj="Włochy">Fiat</marka>
 			<model>500</model>
 			<rocznik>2013</rocznik>
 			<typ>Auta małe</typ>
@@ -228,7 +229,7 @@
 			<data_umieszczenia_ogłoszenia>2018-12-21</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Chevrolet</marka>
+			<marka kraj="USA">Chevrolet</marka>
 			<model>Camaro</model>
 			<rocznik>2013</rocznik>
 			<typ>Coupe</typ>
@@ -239,7 +240,7 @@
 			<data_umieszczenia_ogłoszenia>2018-08-25</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Opel</marka>
+			<marka kraj="Niemcy">Opel</marka>
 			<model>Insignia B</model>
 			<rocznik>2017</rocznik>
 			<typ>Kombi</typ>
@@ -250,7 +251,7 @@
 			<data_umieszczenia_ogłoszenia>2019-03-06</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Fiat</marka>
+			<marka kraj="Włochy">Fiat</marka>
 			<model>Diablo II</model>
 			<rocznik>2016</rocznik>
 			<typ>Minivan</typ>
@@ -261,7 +262,7 @@
 			<data_umieszczenia_ogłoszenia>2018-10-17</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód>
-			<marka>Porsche</marka>
+			<marka kraj="Niemcy">Porsche</marka>
 			<model>Panamera</model>
 			<rocznik>2017</rocznik>
 			<typ>Sedan</typ>

@@ -47,7 +47,9 @@ baza > samochód {
 	margin-right: 150px;
 }
 
-samochód * {
+samochód {
 	margin:10px;
+	background-color: #F6EED9;
+
 }
 
