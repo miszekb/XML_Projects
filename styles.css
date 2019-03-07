@@ -83,7 +83,19 @@ baza {
 	margin: auto;
   	width: 90%;
   	margin-bottom: 50px;
-  	margin-top: 50px;
+	margin-top: 50px;
+	counter-reset: samochód;
+}
+
+samochód::before{
+	display: table-cell;
+	counter-increment: samochód;
+	content: counter(samochód);
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: #F6EED9;
+	width: 10%;
 }
 
 samochód {

@@ -11,10 +11,12 @@
 			<zmiana>2019-03-04 09:54 PM</zmiana>
 			<zmiana>2019-03-05 12:57 AM</zmiana>
 			<zmiana>2019-03-07 01:16 AM</zmiana>
+			<zmiana>2019-03-07 10:47 AM</zmiana>
 	</zmiany>
 
 	<baza>
 		<nazwy>
+			<nazwa>Nr</nazwa>
 			<nazwa>Marka</nazwa>
 			<nazwa>Model</nazwa>
 			<nazwa>Rocznik</nazwa>
