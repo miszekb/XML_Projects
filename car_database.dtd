@@ -4,6 +4,8 @@
          <!ATTLIST autor grupa_TGSK #PCDATA "-">
          <!ATTLIST autor github #PCDATA "-">
    <!ELEMENT baza (samochód+)>
+      <!ELEMENT nazwy (nazwa)>
+         <!ELEMENT nazwa (#PCDATA)>
       <!ELEMENT samochód (marka,model,rocznik,typ,przebieg,rodzaj_silnika,pojemność_silnika, cena, data_umieszczenia_ogłoszenia)>
          <!ELEMENT marka (#PCDATA)>
             <!ATTLIST marka kraj #PCDATA "-">

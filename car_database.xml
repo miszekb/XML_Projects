@@ -7,7 +7,24 @@
 			<autor grupa_TGSK="2" github="MickAlmighty">Michał Mamona 210266</autor>
 			<autor grupa_TGSK="1" github="miszekb">Michał Białecki 210141</autor>
 	</autorzy>
+	<zmiany>
+			<zmiana>2019-03-04 09:54 PM</zmiana>
+			<zmiana>2019-03-05 12:57 AM</zmiana>
+			<zmiana>2019-03-07 01:16 AM</zmiana>
+	</zmiany>
+
 	<baza>
+		<nazwy>
+			<nazwa>Marka</nazwa>
+			<nazwa>Model</nazwa>
+			<nazwa>Rocznik</nazwa>
+			<nazwa>Typ</nazwa>
+			<nazwa>Przebieg</nazwa>
+			<nazwa>Rodzaj silnika</nazwa>
+			<nazwa>Pojemność silnika</nazwa>
+			<nazwa>Cena</nazwa>
+			<nazwa>Data umieszczenia ogłoszenia</nazwa>
+		</nazwy>
 		<samochód>
 			<marka kraj="Niemcy">Volkswagen</marka>
 			<model>Sharan</model>
