@@ -60,6 +60,18 @@ zmiany > zmiana {
 	list-style-type: square;
 }
 
+info {
+	display: inline-block;
+	position: fixed;
+	font-size: 19px;
+	background-color: #E7DBFC;
+	padding: 20px;
+	border-style: dotted;
+	border-radius: 10px;
+	margin-left: 70%;
+	margin-right: 5%;
+	margin-top: 20px;
+}
 
 baza::before {
 	content: 'Baza samochodów:';
@@ -95,7 +107,7 @@ samochód::before{
 	border-width: 1px;
 	border-color: black;
 	background-color: #F6EED9;
-	width: 10%;
+	width: 1px;
 }
 
 samochód {

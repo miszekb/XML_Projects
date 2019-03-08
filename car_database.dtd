@@ -1,14 +1,16 @@
+<?dtd encoding="UTF-8"?>
 <!ELEMENT dokument (autorzy,baza)>
    <!ELEMENT autorzy (autor)>
       <!ELEMENT autor (#PCDATA)>
-         <!ATTLIST autor grupa_TGSK #PCDATA "-">
-         <!ATTLIST autor github #PCDATA "-">
+         <!ATTLIST autor grupa_TGSK CDATA "-">
+         <!ATTLIST autor github CDATA "-">
    <!ELEMENT baza (samochód+)>
-      <!ELEMENT nazwy (nazwa)>
+      <!ELEMENT nazwy (nazwa+)>
          <!ELEMENT nazwa (#PCDATA)>
-      <!ELEMENT samochód (marka,model,rocznik,typ,przebieg,rodzaj_silnika,pojemność_silnika, cena, data_umieszczenia_ogłoszenia)>
+      <!ELEMENT samochód (marka,model,rocznik,typ,przebieg,rodzaj_silnika,pojemność_silnika,cena, data_umieszczenia_ogłoszenia)>
          <!ELEMENT marka (#PCDATA)>
-            <!ATTLIST marka kraj #PCDATA "-">
+            <!ATTLIST marka kraj CDATA "-">
+            <!ATTLIST marka xml:id CDATA "-">
          <!ELEMENT model (#PCDATA)>
          <!ELEMENT rocznik (#PCDATA)>
          <!ELEMENT typ (#PCDATA)>
