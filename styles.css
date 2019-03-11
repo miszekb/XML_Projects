@@ -65,8 +65,9 @@ info {
 	position: fixed;
 	font-size: 19px;
 	background-color: #E7DBFC;
-	padding: 20px;
+	padding:70px;
 	border-style: dotted;
+	font-family: Arial;
 	border-radius: 10px;
 	margin-left: 70%;
 	margin-right: 5%;
