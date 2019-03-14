@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="styles.css" ?>
-<!DOCTYPE baza SYSTEM "car_database.dtd">
+<!DOCTYPE dokument SYSTEM "car_database.dtd">
 <!-- XML Car Database created by Michał Mamona & Michał Białecki [2019]-->
 <dokument>
 		<info>
