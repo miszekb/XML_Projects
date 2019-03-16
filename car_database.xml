@@ -32,7 +32,7 @@
 			<nazwa>Cena</nazwa>
 			<nazwa>Data umieszczenia ogłoszenia</nazwa>
 		</nazwy>
-		<samochód xml:id="1">
+		<samochód xml:id="auto1">
 			<marka kraj="Niemcy">Volkswagen</marka>
 			<model>Sharan</model>
 			<rocznik>2008</rocznik>
@@ -43,7 +43,7 @@
 			<cena>26700</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-30</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="2">
+		<samochód xml:id="auto2">
 			<marka kraj="Japonia">Toyota</marka>
 			<model>Auris</model>
 			<rocznik>2016</rocznik>
@@ -54,7 +54,7 @@
 			<cena>52900</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-27</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="3">
+		<samochód xml:id="auto3">
 			<marka kraj="Niemcy">Audi</marka>
 			<model>A4</model>
 			<rocznik>2018</rocznik>
@@ -65,7 +65,7 @@
 			<cena>165914</cena>
 			<data_umieszczenia_ogłoszenia>2018-10-19</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="4">
+		<samochód xml:id="auto4">
 			<marka kraj="Niemcy">BMW</marka>
 			<model>X6</model>
 			<rocznik>2008</rocznik>
@@ -76,7 +76,7 @@
 			<cena>89900</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-04</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="5">
+		<samochód xml:id="auto5">
 			<marka kraj="Wielka Brytania">Mini</marka>
 			<model>Cooper S</model>
 			<rocznik>2007</rocznik>
@@ -87,7 +87,7 @@
 			<cena>30000</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-03</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="6">
+		<samochód xml:id="auto6">
 			<marka kraj="Włochy">Alfa Romeo</marka>
 			<model>Giulietta</model>
 			<rocznik>2012</rocznik>
@@ -98,7 +98,7 @@
 			<cena>41800</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-25</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="7">
+		<samochód xml:id="auto7">
 			<marka kraj="Niemcy">Volkswagen</marka>
 			<model>Touareg</model>
 			<rocznik>2010</rocznik>
@@ -109,7 +109,7 @@
 			<cena>59500</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-07</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="8">
+		<samochód xml:id="auto8">
 			<marka kraj="Wielka Brytania">Jaguar</marka>
 			<model>F-Pace</model>
 			<rocznik>2018</rocznik>
@@ -120,7 +120,7 @@
 			<cena>230000</cena>
 			<data_umieszczenia_ogłoszenia>2019-01-23</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="9">
+		<samochód xml:id="auto9">
 			<marka kraj="Wielka Brytania">Jeep</marka>
 			<model>Grand Cherokee IV</model>
 			<rocznik>2011</rocznik>
@@ -131,7 +131,7 @@
 			<cena>649000</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-22</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="10">
+		<samochód xml:id="auto10">
 			<marka kraj="Włochy">Iveco</marka>
 			<model>Magirus</model>
 			<rocznik>1984</rocznik>
@@ -142,7 +142,7 @@
 			<cena>29000</cena>
 			<data_umieszczenia_ogłoszenia>2018-09-12</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="11">
+		<samochód xml:id="auto11">
 			<marka kraj="Czechy">Skoda</marka>
 			<model>Fabia II</model>
 			<rocznik>2013</rocznik>
@@ -153,7 +153,7 @@
 			<cena>22555</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-04</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="12">
+		<samochód xml:id="auto12">
 			<marka kraj="Niemcy">Audi</marka>
 			<model>A6 C6</model>
 			<rocznik>2010</rocznik>
@@ -164,7 +164,7 @@
 			<cena>45900</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-28</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="13">
+		<samochód xml:id="auto13">
 			<marka kraj="Japonia">Mazda</marka>
 			<model>6 III</model>
 			<rocznik>2014</rocznik>
@@ -175,7 +175,7 @@
 			<cena>49500</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-01</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="14">
+		<samochód xml:id="auto14">
 			<marka kraj="Japonia">Nissan</marka>
 			<model>Qashqai II</model>
 			<rocznik>2018</rocznik>
@@ -186,7 +186,7 @@
 			<cena>91900</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-09</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="15">
+		<samochód xml:id="auto15">
 			<marka kraj="Niemcy">Opel</marka>
 			<model>Astra K</model>
 			<rocznik>2018</rocznik>
@@ -197,7 +197,7 @@
 			<cena>99900</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-05</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="16">
+		<samochód xml:id="auto16">
 			<marka kraj="Niemcy">Man</marka>
 			<model>TGX</model>
 			<rocznik>2015</rocznik>
@@ -208,7 +208,7 @@
 			<cena>120500</cena>
 			<data_umieszczenia_ogłoszenia>2018-10-30</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="17">
+		<samochód xml:id="auto17">
 			<marka kraj="Niemcy">Volkswagen</marka>
 			<model>Caravelle</model>
 			<rocznik>2018</rocznik>
@@ -219,7 +219,7 @@
 			<cena>108060</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-21</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="18">
+		<samochód xml:id="auto18">
 			<marka kraj="Korea">Kia</marka>
 			<model>Optima</model>
 			<rocznik>2015</rocznik>
@@ -230,7 +230,7 @@
 			<cena>58000</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-26</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="19">
+		<samochód xml:id="auto19">
 			<marka kraj="Japonia">Subaru</marka>
 			<model>Legacy IV</model>
 			<rocznik>2008</rocznik>
@@ -241,7 +241,7 @@
 			<cena>24900</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-09</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="20">
+		<samochód xml:id="auto20">
 			<marka kraj="Włochy">Fiat</marka>
 			<model>500</model>
 			<rocznik>2013</rocznik>
@@ -252,7 +252,7 @@
 			<cena>68900</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-21</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="21">
+		<samochód xml:id="auto21">
 			<marka kraj="USA">Chevrolet</marka>
 			<model>Camaro</model>
 			<rocznik>2013</rocznik>
@@ -263,7 +263,7 @@
 			<cena>49999</cena>
 			<data_umieszczenia_ogłoszenia>2018-08-25</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="22">
+		<samochód xml:id="auto22">
 			<marka kraj="Niemcy">Opel</marka>
 			<model>Insignia B</model>
 			<rocznik>2017</rocznik>
@@ -274,7 +274,7 @@
 			<cena>91900</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-06</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="23">
+		<samochód xml:id="auto23">
 			<marka kraj="Włochy">Fiat</marka>
 			<model>Diablo II</model>
 			<rocznik>2016</rocznik>
@@ -285,7 +285,7 @@
 			<cena>49900</cena>
 			<data_umieszczenia_ogłoszenia>2018-10-17</data_umieszczenia_ogłoszenia>
 		</samochód>
-		<samochód xml:id="24">
+		<samochód xml:id="auto24">
 			<marka kraj="Niemcy">Porsche</marka>
 			<model>Panamera</model>
 			<rocznik>2017</rocznik>

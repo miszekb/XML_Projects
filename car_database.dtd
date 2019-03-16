@@ -11,10 +11,10 @@
      <!ELEMENT nazwy (nazwa+)>
          <!ELEMENT nazwa (#PCDATA)>
      <!ELEMENT samochód (marka,model,rocznik,typ,przebieg,rodzaj_silnika,pojemność_silnika,cena, data_umieszczenia_ogłoszenia)>
-				 <!ATTLIST samochód xml:id CDATA #REQUIRED>
+				 <!ATTLIST samochód xml:id ID #REQUIRED>
          <!ELEMENT marka (#PCDATA)>
             <!ATTLIST marka kraj CDATA "-">
-            <!ATTLIST marka xml:id CDATA "-">
+            <!ATTLIST marka xml:id ID #REQUIRED>
          <!ELEMENT model (#PCDATA)>
          <!ELEMENT rocznik (#PCDATA)>
          <!ELEMENT typ (#PCDATA)>
