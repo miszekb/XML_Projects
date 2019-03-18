@@ -141,5 +141,6 @@ marka, model, rocznik, typ, przebieg, rodzaj_silnika, pojemność_silnika, cena,
 	border-style: solid;
 	border-width: 1px;
 	padding: 3px;
+	width: auto;
 }
 

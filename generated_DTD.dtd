@@ -1,0 +1,81 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT dokument (info,autorzy,zmiany,baza)>
+<!ATTLIST dokument xmlns CDATA #FIXED ''>
+
+<!ELEMENT info (#PCDATA)>
+<!ATTLIST info
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT autorzy (autor)+>
+<!ATTLIST autorzy
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT zmiany (zmiana)+>
+<!ATTLIST zmiany
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT baza (nazwy,samochód+)>
+<!ATTLIST baza
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT autor (#PCDATA)>
+<!ATTLIST autor
+  xmlns CDATA #FIXED ''
+  github NMTOKEN #REQUIRED
+  grupa_TGSK CDATA #REQUIRED>
+
+<!ELEMENT zmiana (#PCDATA)>
+<!ATTLIST zmiana
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nazwy (nazwa)+>
+<!ATTLIST nazwy
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT samochód (marka,model,rocznik,typ,przebieg,rodzaj_silnika,
+                    pojemność_silnika,cena,
+                    data_umieszczenia_ogłoszenia)>
+<!ATTLIST samochód
+  xmlns CDATA #FIXED ''
+  xml:id CDATA #REQUIRED>
+
+<!ELEMENT nazwa (#PCDATA)>
+<!ATTLIST nazwa
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT marka (#PCDATA)>
+<!ATTLIST marka
+  xmlns CDATA #FIXED ''
+  kraj CDATA #REQUIRED>
+
+<!ELEMENT model (#PCDATA)>
+<!ATTLIST model
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rocznik (#PCDATA)>
+<!ATTLIST rocznik
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT typ (#PCDATA)>
+<!ATTLIST typ
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT przebieg (#PCDATA)>
+<!ATTLIST przebieg xmlns CDATA #FIXED ''>
+
+<!ELEMENT rodzaj_silnika (#PCDATA)>
+<!ATTLIST rodzaj_silnika
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT pojemność_silnika (#PCDATA)>
+<!ATTLIST pojemność_silnika
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST cena
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT data_umieszczenia_ogłoszenia (#PCDATA)>
+<!ATTLIST data_umieszczenia_ogłoszenia
+  xmlns CDATA #FIXED ''>
