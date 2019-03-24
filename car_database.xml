@@ -18,8 +18,84 @@
 			<zmiana>2019-03-07 01:16 AM</zmiana>
 			<zmiana>2019-03-07 10:47 AM</zmiana>
 	</zmiany>
-	
-	<baza>
+	<marki>
+		<marka markaID="M1">
+			<koncern>Volkswagen</koncern>
+			<rok_założenia>1931</rok_założenia>
+		</marka>
+		<marka markaID="M2">
+			<koncern>BMW</koncern>
+			<rok_założenia>1916</rok_założenia>
+		</marka>
+		<marka markaID="M3">
+			<koncern>Toyota</koncern>
+			<rok_założenia>1937</rok_założenia>
+		</marka>
+		<marka markaID="M4">
+			<koncern>Audi</koncern>
+			<rok_założenia>1909</rok_założenia>
+		</marka>
+		<marka markaID="M5">
+			<koncern>Mini</koncern>
+			<rok_założenia>1959</rok_założenia>
+		</marka>
+		<marka markaID="M6">
+			<koncern>Jaguar</koncern>
+			<rok_założenia>1922</rok_założenia>
+		</marka>	
+		<marka markaID="M8">
+			<koncern>Fiat</koncern>
+			<rok_założenia>1899</rok_założenia>
+		</marka>
+		<marka markaID="M9">
+			<koncern>Porsche</koncern>
+			<rok_założenia>1931</rok_założenia>
+		</marka>	
+		<marka markaID="M10">
+			<koncern>Kia</koncern>
+			<rok_założenia>1944</rok_założenia>
+		</marka>
+		<marka markaID="M11">
+			<koncern>Subaru</koncern>
+			<rok_założenia>1953</rok_założenia>
+		</marka>
+		<marka markaID="M12">
+			<koncern>Mazda</koncern>
+			<rok_założenia>1920</rok_założenia>
+		</marka>
+		<marka markaID="M13">
+			<koncern>Skoda</koncern>
+			<rok_założenia>1895</rok_założenia>
+		</marka>	
+		<marka markaID="M14">
+			<koncern>Opel</koncern>
+			<rok_założenia>1862</rok_założenia>
+		</marka>
+		<marka markaID="M15">
+			<koncern>Alfa Romeo</koncern>
+			<rok_założenia>1910</rok_założenia>
+		</marka>
+		<marka markaID="M16">
+			<koncern>Nissan</koncern>
+			<rok_założenia>1933</rok_założenia>
+		</marka>	
+		<marka markaID="M17">
+			<koncern>Jeep</koncern>
+			<rok_założenia>1941</rok_założenia>
+		</marka>
+		<marka markaID="M18">
+			<koncern>Iveco</koncern>
+			<rok_założenia>1975</rok_założenia>
+		</marka>	
+		<marka markaID="M19">
+			<koncern>Man</koncern>
+			<rok_założenia>1758</rok_założenia>
+		</marka>
+		<marka markaID="M20">
+			<koncern>Chevrolet</koncern>
+			<rok_założenia>1911</rok_założenia>
+		</marka>
+		<baza>
 		<nazwy>
 			<nazwa>Nr</nazwa>
 			<nazwa>Marka</nazwa>
@@ -33,8 +109,8 @@
 			<nazwa>Data umieszczenia ogłoszenia</nazwa>
 		</nazwy>
 		<samochód xml:id="auto1">
-			<marka kraj="Niemcy">Volkswagen</marka>
-			<model>Sharan</model>
+			<marka_auta markaID="M1"/>
+			<model kraj="Niemcy">Sharan</model>
 			<rocznik>2008</rocznik>
 			<typ>Minivan</typ>
 			<przebieg>248000</przebieg>
@@ -44,8 +120,8 @@
 			<data_umieszczenia_ogłoszenia>2018-12-30</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto2">
-			<marka kraj="Japonia">Toyota</marka>
-			<model>Auris</model>
+			<marka_auta markaID="M3"/>
+			<model kraj="Japonia">Auris</model>
 			<rocznik>2016</rocznik>
 			<typ>Kombi</typ>
 			<przebieg>59500</przebieg>
@@ -55,8 +131,8 @@
 			<data_umieszczenia_ogłoszenia>2018-11-27</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto3">
-			<marka kraj="Niemcy">Audi</marka>
-			<model>A4</model>
+			<marka_auta markaID="M4"/>
+			<model kraj="Niemcy">A4</model>
 			<rocznik>2018</rocznik>
 			<typ>Kombi</typ>
 			<przebieg>1</przebieg>
@@ -66,8 +142,8 @@
 			<data_umieszczenia_ogłoszenia>2018-10-19</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto4">
-			<marka kraj="Niemcy">BMW</marka>
-			<model>X6</model>
+			<marka_auta markaID="M2"/>
+			<model kraj="Niemcy">X6</model>
 			<rocznik>2008</rocznik>
 			<typ>SUV</typ>
 			<przebieg>110000</przebieg>
@@ -77,8 +153,8 @@
 			<data_umieszczenia_ogłoszenia>2019-02-04</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto5">
-			<marka kraj="Wielka Brytania">Mini</marka>
-			<model>Cooper S</model>
+			<marka_auta markaID="M5"/>
+			<model kraj="Wielka Brytania">Cooper S</model>
 			<rocznik>2007</rocznik>
 			<typ>Auta małe</typ>
 			<przebieg>150000</przebieg>
@@ -88,8 +164,8 @@
 			<data_umieszczenia_ogłoszenia>2019-03-03</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto6">
-			<marka kraj="Włochy">Alfa Romeo</marka>
-			<model>Giulietta</model>
+			<marka_auta markaID="M15"/>
+			<model kraj="Włochy">Giulietta</model>
 			<rocznik>2012</rocznik>
 			<typ>Kompakt</typ>
 			<przebieg>144000</przebieg>
@@ -99,8 +175,8 @@
 			<data_umieszczenia_ogłoszenia>2018-11-25</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto7">
-			<marka kraj="Niemcy">Volkswagen</marka>
-			<model>Touareg</model>
+			<marka_auta markaID="M1"/>
+			<model kraj="Niemcy">Touareg</model>
 			<rocznik>2010</rocznik>
 			<typ>SUV</typ>
 			<przebieg>367862</przebieg>
@@ -110,8 +186,8 @@
 			<data_umieszczenia_ogłoszenia>2019-02-07</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto8">
-			<marka kraj="Wielka Brytania">Jaguar</marka>
-			<model>F-Pace</model>
+			<marka_auta markaID="M6"/>
+			<model kraj="Wielka Brytania">F-Pace</model>
 			<rocznik>2018</rocznik>
 			<typ>SUV</typ>
 			<przebieg>5500</przebieg>
@@ -121,8 +197,8 @@
 			<data_umieszczenia_ogłoszenia>2019-01-23</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto9">
-			<marka kraj="Wielka Brytania">Jeep</marka>
-			<model>Grand Cherokee IV</model>
+			<marka_auta markaID="M17"/>
+			<model kraj="USA">Grand Cherokee IV</model>
 			<rocznik>2011</rocznik>
 			<typ>SUV</typ>
 			<przebieg>196000</przebieg>
@@ -132,8 +208,8 @@
 			<data_umieszczenia_ogłoszenia>2018-12-22</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto10">
-			<marka kraj="Włochy">Iveco</marka>
-			<model>Magirus</model>
+			<marka_auta markaID="M18"/>
+			<model kraj="Włochy">Magirus</model>
 			<rocznik>1984</rocznik>
 			<typ>Tir</typ>
 			<przebieg>436581</przebieg>
@@ -143,8 +219,8 @@
 			<data_umieszczenia_ogłoszenia>2018-09-12</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto11">
-			<marka kraj="Czechy">Skoda</marka>
-			<model>Fabia II</model>
+			<marka_auta markaID="M13"/>
+			<model kraj="Czechy">Fabia II</model>
 			<rocznik>2013</rocznik>
 			<typ>Kombi</typ>
 			<przebieg>167000</przebieg>
@@ -154,8 +230,8 @@
 			<data_umieszczenia_ogłoszenia>2019-03-04</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto12">
-			<marka kraj="Niemcy">Audi</marka>
-			<model>A6 C6</model>
+			<marka_auta markaID="M4"/>
+			<model kraj="Niemcy">A6 C6</model>
 			<rocznik>2010</rocznik>
 			<typ>Sedan</typ>
 			<przebieg>162000</przebieg>
@@ -165,8 +241,8 @@
 			<data_umieszczenia_ogłoszenia>2018-11-28</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto13">
-			<marka kraj="Japonia">Mazda</marka>
-			<model>6 III</model>
+			<marka_auta markaID="M12"/>
+			<model kraj="Japonia">6 III</model>
 			<rocznik>2014</rocznik>
 			<typ>Sedan</typ>
 			<przebieg>223000</przebieg>
@@ -176,8 +252,8 @@
 			<data_umieszczenia_ogłoszenia>2019-02-01</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto14">
-			<marka kraj="Japonia">Nissan</marka>
-			<model>Qashqai II</model>
+			<marka_auta markaID="M16"/>
+			<model kraj="Japonia">Qashqai II</model>
 			<rocznik>2018</rocznik>
 			<typ>SUV</typ>
 			<przebieg>1</przebieg>
@@ -187,8 +263,8 @@
 			<data_umieszczenia_ogłoszenia>2018-12-09</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto15">
-			<marka kraj="Niemcy">Opel</marka>
-			<model>Astra K</model>
+			<marka_auta markaID="M14"/>
+			<model kraj="Niemcy">Astra K</model>
 			<rocznik>2018</rocznik>
 			<typ>Kombi</typ>
 			<przebieg>1</przebieg>
@@ -198,8 +274,8 @@
 			<data_umieszczenia_ogłoszenia>2019-03-05</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto16">
-			<marka kraj="Niemcy">Man</marka>
-			<model>TGX</model>
+			<marka_auta markaID="M19"/>
+			<model kraj="Niemcy">TGX</model>
 			<rocznik>2015</rocznik>
 			<typ>Tir</typ>
 			<przebieg>400000</przebieg>
@@ -209,8 +285,8 @@
 			<data_umieszczenia_ogłoszenia>2018-10-30</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto17">
-			<marka kraj="Niemcy">Volkswagen</marka>
-			<model>Caravelle</model>
+			<marka_auta markaID="M1"/>
+			<model kraj="Niemcy">Caravelle</model>
 			<rocznik>2018</rocznik>
 			<typ>Minivan</typ>
 			<przebieg>7</przebieg>
@@ -220,8 +296,8 @@
 			<data_umieszczenia_ogłoszenia>2019-02-21</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto18">
-			<marka kraj="Korea">Kia</marka>
-			<model>Optima</model>
+			<marka_auta markaID="M10"/>
+			<model kraj="Korea">Optima</model>
 			<rocznik>2015</rocznik>
 			<typ>Sedan</typ>
 			<przebieg>109870</przebieg>
@@ -231,8 +307,8 @@
 			<data_umieszczenia_ogłoszenia>2018-11-26</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto19">
-			<marka kraj="Japonia">Subaru</marka>
-			<model>Legacy IV</model>
+			<marka_auta markaID="M11"/>
+			<model kraj="Japonia">Legacy IV</model>
 			<rocznik>2008</rocznik>
 			<typ>Kombi</typ>
 			<przebieg>294500</przebieg>
@@ -242,8 +318,8 @@
 			<data_umieszczenia_ogłoszenia>2019-02-09</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto20">
-			<marka kraj="Włochy">Fiat</marka>
-			<model>500</model>
+			<marka_auta markaID="M8"/>
+			<model kraj="Włochy">500</model>
 			<rocznik>2013</rocznik>
 			<typ>Auta małe</typ>
 			<przebieg>26556</przebieg>
@@ -253,8 +329,8 @@
 			<data_umieszczenia_ogłoszenia>2018-12-21</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto21">
-			<marka kraj="USA">Chevrolet</marka>
-			<model>Camaro</model>
+			<marka_auta markaID="M20"/>
+			<model kraj="USA">Camaro</model>
 			<rocznik>2013</rocznik>
 			<typ>Coupe</typ>
 			<przebieg>94901</przebieg>
@@ -264,8 +340,8 @@
 			<data_umieszczenia_ogłoszenia>2018-08-25</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto22">
-			<marka kraj="Niemcy">Opel</marka>
-			<model>Insignia B</model>
+			<marka_auta markaID="M14"/>
+			<model kraj="Niemcy">Insignia B</model>
 			<rocznik>2017</rocznik>
 			<typ>Kombi</typ>
 			<przebieg>42600</przebieg>
@@ -275,8 +351,8 @@
 			<data_umieszczenia_ogłoszenia>2019-03-06</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto23">
-			<marka kraj="Włochy">Fiat</marka>
-			<model>Diablo II</model>
+			<marka_auta markaID="M8"/>
+			<model kraj="Włochy">Diablo II</model>
 			<rocznik>2016</rocznik>
 			<typ>Minivan</typ>
 			<przebieg>59945</przebieg>
@@ -286,8 +362,8 @@
 			<data_umieszczenia_ogłoszenia>2018-10-17</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód xml:id="auto24">
-			<marka kraj="Niemcy">Porsche</marka>
-			<model>Panamera</model>
+			<marka_auta markaID="M9"/>
+			<model kraj="Niemcy">Panamera</model>
 			<rocznik>2017</rocznik>
 			<typ>Sedan</typ>
 			<przebieg>34000</przebieg>
