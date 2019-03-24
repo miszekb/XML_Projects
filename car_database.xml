@@ -18,83 +18,7 @@
 			<zmiana>2019-03-07 01:16 AM</zmiana>
 			<zmiana>2019-03-07 10:47 AM</zmiana>
 	</zmiany>
-	<marki>
-		<marka markaID="M1">
-			<koncern>Volkswagen</koncern>
-			<rok_założenia>1931</rok_założenia>
-		</marka>
-		<marka markaID="M2">
-			<koncern>BMW</koncern>
-			<rok_założenia>1916</rok_założenia>
-		</marka>
-		<marka markaID="M3">
-			<koncern>Toyota</koncern>
-			<rok_założenia>1937</rok_założenia>
-		</marka>
-		<marka markaID="M4">
-			<koncern>Audi</koncern>
-			<rok_założenia>1909</rok_założenia>
-		</marka>
-		<marka markaID="M5">
-			<koncern>Mini</koncern>
-			<rok_założenia>1959</rok_założenia>
-		</marka>
-		<marka markaID="M6">
-			<koncern>Jaguar</koncern>
-			<rok_założenia>1922</rok_założenia>
-		</marka>	
-		<marka markaID="M8">
-			<koncern>Fiat</koncern>
-			<rok_założenia>1899</rok_założenia>
-		</marka>
-		<marka markaID="M9">
-			<koncern>Porsche</koncern>
-			<rok_założenia>1931</rok_założenia>
-		</marka>	
-		<marka markaID="M10">
-			<koncern>Kia</koncern>
-			<rok_założenia>1944</rok_założenia>
-		</marka>
-		<marka markaID="M11">
-			<koncern>Subaru</koncern>
-			<rok_założenia>1953</rok_założenia>
-		</marka>
-		<marka markaID="M12">
-			<koncern>Mazda</koncern>
-			<rok_założenia>1920</rok_założenia>
-		</marka>
-		<marka markaID="M13">
-			<koncern>Skoda</koncern>
-			<rok_założenia>1895</rok_założenia>
-		</marka>	
-		<marka markaID="M14">
-			<koncern>Opel</koncern>
-			<rok_założenia>1862</rok_założenia>
-		</marka>
-		<marka markaID="M15">
-			<koncern>Alfa Romeo</koncern>
-			<rok_założenia>1910</rok_założenia>
-		</marka>
-		<marka markaID="M16">
-			<koncern>Nissan</koncern>
-			<rok_założenia>1933</rok_założenia>
-		</marka>	
-		<marka markaID="M17">
-			<koncern>Jeep</koncern>
-			<rok_założenia>1941</rok_założenia>
-		</marka>
-		<marka markaID="M18">
-			<koncern>Iveco</koncern>
-			<rok_założenia>1975</rok_założenia>
-		</marka>	
-		<marka markaID="M19">
-			<koncern>Man</koncern>
-			<rok_założenia>1758</rok_założenia>
-		</marka>
-		<marka markaID="M20">
-			<koncern>Chevrolet</koncern>
-			<rok_założenia>1911</rok_założenia>
-		</marka>
+
 		<baza>
 		<nazwy>
 			<nazwa>Nr</nazwa>
@@ -373,4 +297,88 @@
 			<data_umieszczenia_ogłoszenia>2018-09-11</data_umieszczenia_ogłoszenia>
 		</samochód>
 	</baza>
+
+
+		<marki>
+			<nazwy>
+			<nazwa>Koncern</nazwa>
+			<nazwa>Rok założenia</nazwa>
+		</nazwy>
+		<marka markaID="M1">
+			<koncern>Volkswagen</koncern>
+			<rok_założenia>1931</rok_założenia>
+		</marka>
+		<marka markaID="M2">
+			<koncern>BMW</koncern>
+			<rok_założenia>1916</rok_założenia>
+		</marka>
+		<marka markaID="M3">
+			<koncern>Toyota</koncern>
+			<rok_założenia>1937</rok_założenia>
+		</marka>
+		<marka markaID="M4">
+			<koncern>Audi</koncern>
+			<rok_założenia>1909</rok_założenia>
+		</marka>
+		<marka markaID="M5">
+			<koncern>Mini</koncern>
+			<rok_założenia>1959</rok_założenia>
+		</marka>
+		<marka markaID="M6">
+			<koncern>Jaguar</koncern>
+			<rok_założenia>1922</rok_założenia>
+		</marka>	
+		<marka markaID="M8">
+			<koncern>Fiat</koncern>
+			<rok_założenia>1899</rok_założenia>
+		</marka>
+		<marka markaID="M9">
+			<koncern>Porsche</koncern>
+			<rok_założenia>1931</rok_założenia>
+		</marka>	
+		<marka markaID="M10">
+			<koncern>Kia</koncern>
+			<rok_założenia>1944</rok_założenia>
+		</marka>
+		<marka markaID="M11">
+			<koncern>Subaru</koncern>
+			<rok_założenia>1953</rok_założenia>
+		</marka>
+		<marka markaID="M12">
+			<koncern>Mazda</koncern>
+			<rok_założenia>1920</rok_założenia>
+		</marka>
+		<marka markaID="M13">
+			<koncern>Skoda</koncern>
+			<rok_założenia>1895</rok_założenia>
+		</marka>	
+		<marka markaID="M14">
+			<koncern>Opel</koncern>
+			<rok_założenia>1862</rok_założenia>
+		</marka>
+		<marka markaID="M15">
+			<koncern>Alfa Romeo</koncern>
+			<rok_założenia>1910</rok_założenia>
+		</marka>
+		<marka markaID="M16">
+			<koncern>Nissan</koncern>
+			<rok_założenia>1933</rok_założenia>
+		</marka>	
+		<marka markaID="M17">
+			<koncern>Jeep</koncern>
+			<rok_założenia>1941</rok_założenia>
+		</marka>
+		<marka markaID="M18">
+			<koncern>Iveco</koncern>
+			<rok_założenia>1975</rok_założenia>
+		</marka>	
+		<marka markaID="M19">
+			<koncern>Man</koncern>
+			<rok_założenia>1758</rok_założenia>
+		</marka>
+		<marka markaID="M20">
+			<koncern>Chevrolet</koncern>
+			<rok_założenia>1911</rok_założenia>
+		</marka>
+	</marki>
 </dokument>
