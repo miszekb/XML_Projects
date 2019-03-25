@@ -3,11 +3,11 @@
 <!DOCTYPE dokument SYSTEM "car_database.dtd">
 <!-- XML Car Database created by Michał Mamona & Michał Białecki [2019]-->
 <dokument>
-		<info>
+<!--		<info>
 			Przeglądasz obecnie bazę samochodów wraz z ich podstawowymi parametrami
 			sporządzoną w ramach przedmiotu "Programowanie Komunikacji Człowiek-Komputer".
 			Dane pochodzą z serwisu z ogłoszeniami otomoto.pl
-		</info>
+		</info> -->
 	<autorzy>
 			<autor grupa_TGSK="2" github="MickAlmighty">Michał Mamona 210266</autor>
 			<autor grupa_TGSK="1" github="miszekb">Michał Białecki 210141</autor>
@@ -18,19 +18,7 @@
 			<zmiana>2019-03-07 01:16 AM</zmiana>
 			<zmiana>2019-03-07 10:47 AM</zmiana>
 	</zmiany>
-
 		<baza>
-		<nazwy>
-			<nazwa>Nr</nazwa>
-			<nazwa>Model</nazwa>
-			<nazwa>Rocznik</nazwa>
-			<nazwa>Typ</nazwa>
-			<nazwa>Przebieg</nazwa>
-			<nazwa>Rodzaj silnika</nazwa>
-			<nazwa>Pojemność silnika</nazwa>
-			<nazwa>Cena</nazwa>
-			<nazwa>Data umieszczenia ogłoszenia</nazwa>
-		</nazwy>
 		<samochód ID="auto1">
 			<marka_auta markaID="M1"/>
 			<model kraj="Niemcy">Sharan</model>
@@ -297,10 +285,7 @@
 		</samochód>
 	</baza>
 		<marki>
-			<nazwy>
-			<nazwa>Koncern</nazwa>
-			<nazwa>Rok założenia</nazwa>
-		</nazwy>
+
 		<marka markaID="M1">
 			<koncern>Volkswagen</koncern>
 			<rok_założenia>1931</rok_założenia>

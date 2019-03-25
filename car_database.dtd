@@ -23,7 +23,7 @@
 
 <!-- parametry samochodów -->
 <!ELEMENT marka_auta EMPTY>
-    <!ATTLIST marka_auta markaID IDREFS #IMPLIED>
+    <!ATTLIST marka_auta markaID IDREF #IMPLIED>
 <!ELEMENT model (#PCDATA)>
     <!ATTLIST model kraj (Niemcy|Japonia|Korea|Włochy|USA|Wielka_Brytania|Czechy) "Niemcy">
 <!ELEMENT rocznik (#PCDATA)>
