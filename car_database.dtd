@@ -1,25 +1,44 @@
-<?dtd encoding="UTF-8"?>
-<!ELEMENT dokument (info,autorzy,zmiany,baza)>
-  <!ELEMENT info (#PCDATA)> 
-	<!ELEMENT autorzy (autor+)>
-      <!ELEMENT autor (#PCDATA)>
-         <!ATTLIST autor grupa_TGSK CDATA "-">
-         <!ATTLIST autor github CDATA "-">
-	<!ELEMENT zmiany (zmiana+)>
-		<!ELEMENT zmiana (#PCDATA)>
-  <!ELEMENT baza (nazwy, samochód+)>
-     <!ELEMENT nazwy (nazwa+)>
-         <!ELEMENT nazwa (#PCDATA)>
-     <!ELEMENT samochód (marka,model,rocznik,typ,przebieg,rodzaj_silnika,pojemność_silnika,cena, data_umieszczenia_ogłoszenia)>
-				 <!ATTLIST samochód xml:id ID #REQUIRED>
-         <!ELEMENT marka (#PCDATA)>
-            <!ATTLIST marka kraj CDATA "-">
-            <!ATTLIST marka xml:id ID #REQUIRED>
-         <!ELEMENT model (#PCDATA)>
-         <!ELEMENT rocznik (#PCDATA)>
-         <!ELEMENT typ (#PCDATA)>
-         <!ELEMENT przebieg (#PCDATA)>
-         <!ELEMENT rodzaj_silnika (#PCDATA)>
-         <!ELEMENT pojemność_silnika (#PCDATA)>
-         <!ELEMENT cena (#PCDATA)>
-         <!ELEMENT data_umieszczenia_ogłoszenia (#PCDATA)>
+<?xml encoding="UTF-8"?>
+
+<!-- główny kontener -->
+<!ELEMENT dokument (info,autorzy,zmiany,baza,marki)>
+    <!ELEMENT info (#PCDATA)>
+<!-- autorzy dokumentu -->
+    <!ELEMENT autorzy (autor)+>
+        <!ELEMENT autor (#PCDATA)>
+        <!ATTLIST autor github CDATA #REQUIRED grupa_TGSK CDATA #REQUIRED>
+<!-- daty zmian w dokumencie -->
+    <!ELEMENT zmiany (zmiana)+>
+        <!ELEMENT zmiana (#PCDATA)>
+<!-- baza samochodów -->     
+    <!ELEMENT baza (nazwy,samochód+)>
+        <!ELEMENT samochód (marka_auta,model,rocznik,typ,przebieg,
+                    rodzaj_silnika,pojemność_silnika,cena,
+                    data_umieszczenia_ogłoszenia)>
+        <!ATTLIST samochód ID CDATA #REQUIRED>
+<!--spis marek-->
+    <!ELEMENT marki (nazwy,marka+)>
+        <!ELEMENT marka (koncern,rok_założenia)>
+        <!ATTLIST marka markaID ID #REQUIRED>
+
+<!-- parametry samochodów -->
+<!ELEMENT marka_auta EMPTY>
+    <!ATTLIST marka_auta markaID IDREFS #IMPLIED>
+<!ELEMENT model (#PCDATA)>
+<!ATTLIST model kraj CDATA #REQUIRED>
+<!ELEMENT rocznik (#PCDATA)>
+<!ELEMENT typ (#PCDATA)>
+<!ELEMENT przebieg (#PCDATA)>
+<!ELEMENT rodzaj_silnika (#PCDATA)>
+<!ELEMENT pojemność_silnika (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ELEMENT data_umieszczenia_ogłoszenia (#PCDATA)>
+
+<!-- dane na temat marki -->
+<!ELEMENT koncern (#PCDATA)>
+<!ELEMENT rok_założenia (#PCDATA)>
+
+<!-- nazwy kolumn -->
+<!ELEMENT nazwy (nazwa)+>
+  <!ELEMENT nazwa (#PCDATA)>
+
