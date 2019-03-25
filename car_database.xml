@@ -65,7 +65,7 @@
 		</samochód>
 		<samochód ID="auto5">
 			<marka_auta markaID="M5"/>
-			<model kraj="Wielka Brytania">Cooper S</model>
+			<model kraj="Wielka_Brytania">Cooper S</model>
 			<rocznik>2007</rocznik>
 			<typ>Auta małe</typ>
 			<przebieg>150000</przebieg>
@@ -98,7 +98,7 @@
 		</samochód>
 		<samochód ID="auto8">
 			<marka_auta markaID="M6"/>
-			<model kraj="Wielka Brytania">F-Pace</model>
+			<model kraj="Wielka_Brytania">F-Pace</model>
 			<rocznik>2018</rocznik>
 			<typ>SUV</typ>
 			<przebieg>5500</przebieg>

@@ -1,8 +1,7 @@
 <?xml encoding="UTF-8"?>
 
 <!-- główny kontener -->
-<!ELEMENT dokument (info,autorzy,zmiany,baza,marki)>
-    <!ELEMENT info (#PCDATA)>
+<!ELEMENT dokument (autorzy,zmiany,baza,marki)>
 <!-- autorzy dokumentu -->
     <!ELEMENT autorzy (autor)+>
         <!ELEMENT autor (#PCDATA)>
@@ -11,18 +10,20 @@
     <!ELEMENT zmiany (zmiana)+>
         <!ELEMENT zmiana (#PCDATA)>
 <!-- baza samochodów -->     
-    <!ELEMENT baza (nazwy,samochód+)>
+    <!ELEMENT baza (samochód)+>
         <!ELEMENT samochód (marka_auta,model,rocznik,typ,przebieg,
                     rodzaj_silnika,pojemność_silnika,cena,
                     data_umieszczenia_ogłoszenia)>
         <!ATTLIST samochód ID CDATA #REQUIRED>
 <!--spis marek-->
-    <!ELEMENT marki (nazwy,marka+)>
+    <!ELEMENT marki (marka+)>
         <!ELEMENT marka (koncern,rok_założenia)>
         <!ATTLIST marka markaID ID #REQUIRED>
 
 <!-- parametry samochodów -->
 <!ELEMENT marka_auta EMPTY>
+
+
     <!ATTLIST marka_auta markaID IDREF #IMPLIED>
 <!ELEMENT model (#PCDATA)>
     <!ATTLIST model kraj (Niemcy|Japonia|Korea|Włochy|USA|Wielka_Brytania|Czechy) "Niemcy">
@@ -37,8 +38,3 @@
 <!-- dane na temat marki -->
 <!ELEMENT koncern (#PCDATA)>
 <!ELEMENT rok_założenia (#PCDATA)>
-
-<!-- nazwy kolumn -->
-<!ELEMENT nazwy (nazwa)+>
-  <!ELEMENT nazwa (#PCDATA)>
-
