@@ -1,0 +1,165 @@
+dokument {
+	background-color: #8DB8EE;
+}
+
+autorzy::before {
+	content: 'Autorzy:';
+	text-align: center;
+	font-size: 30px;
+	font-family: Verdana;
+	color: white;
+	padding: 10px;
+
+}
+
+autorzy > autor{
+	background-color: #816D3A;
+	font-family: Verdana;
+	font-size: 20px;
+	color: white;
+	border-width: 5px;
+	border-color: black;
+	text-align: center;
+	margin:20px;
+	border-radius: 20px;
+	margin-left: 40px;
+	margin-top: 10px;
+	width: 20%;
+	display: list-item;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	list-style-type: upper-roman;
+}
+
+zmiany::before {
+	content: 'Zmiany w dokumencie:';
+	text-align: center;
+	font-size: 30px;
+	font-family: Verdana;
+	color: white;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+zmiany > zmiana {
+    background-color: #C6F6E5;
+	font-family: Verdana;
+	font-size: 17px;
+	color: black;
+	border-width: 5px;
+	border-color: black;
+	text-align: center;
+	margin: auto;
+	margin-left: 40px;
+	margin-top: 10px;
+	width: 150px;
+	border-radius: 20px;;
+	display: list-item;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-type: square;
+}
+
+info {
+	display: inline-block;
+	position: fixed;
+	font-size: 19px;
+	background-color: #E7DBFC;
+	padding:70px;
+	border-style: dotted;
+	font-family: Arial;
+	border-radius: 10px;
+	margin-left: 70%;
+	margin-right: 5%;
+	margin-top: 20px;
+}
+
+marki {
+	display: table;
+	margin-top: 20px;
+	margin-left: 90px;
+	width: 30%;
+}
+
+marki::before {
+	content: 'Spis koncernów samochodowych';
+	font-family: Calibri;
+	font-size: 20px;
+}
+
+marka {
+	display: table-row;
+	background-color: #F6EED9;
+}
+
+koncern, rok_założenia {
+	display: table-cell;
+	width: auto;
+	border-style: solid;
+	border-width: 1px;
+	padding-left: 30px;0
+	padding-right: 30px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	font-family: Calibri;
+	font-size: 15px;
+}
+
+baza::before {
+	content: 'Baza samochodów:';
+	text-align: center;
+	font-size: 30px;
+	font-family: Verdana;
+	color: black;
+	padding: 10px;
+	padding-bottom: 40px;
+}
+
+baza {
+	font-family: Calibri;
+	font-size: 16px;
+	display: table;
+	border-style: solid;
+	margin: 10px;
+	padding: 10px;
+	background-color: #F7ECCE;
+	border-radius: 20px;
+	margin: auto;
+  	width: 90%;
+  	margin-bottom: 50px;
+	margin-top: 50px;
+	counter-reset: samochód;
+}
+
+samochód::before{
+	display: table-cell;
+	counter-increment: samochód;
+	content: counter(samochód);
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: #F6EED9;
+	width: 1px;
+}
+
+samochód {
+	display: table-row;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: #F6EED9;
+}
+
+model, rocznik, typ, przebieg, rodzaj_silnika, pojemność_silnika, cena, data_umieszczenia_ogłoszenia {
+	display:  table-cell;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	padding: 3px;
+	width: auto;
+}
+
+marka_auta {
+	display: none;
+}
+

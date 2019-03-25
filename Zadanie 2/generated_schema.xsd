@@ -1,0 +1,94 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dokument">
+    <xs:annotation>
+      <xs:documentation>XML Car Database created by Michał Mamona &amp; Michał Białecki [2019]</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="autorzy">
+          <xs:annotation>
+            <xs:documentation>&lt;info>
+			Przeglądasz obecnie bazę samochodów wraz z ich podstawowymi parametrami
+			sporządzoną w ramach przedmiotu "Programowanie Komunikacji Człowiek-Komputer".
+			Dane pochodzą z serwisu z ogłoszeniami otomoto.pl
+		&lt;/info></xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="autor" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="grupa_TGSK" use="optional"/>
+                      <xs:attribute type="xs:string" name="github" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zmiany">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="zmiana" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="baza">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="samochód" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="marka_auta">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="markaID" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="model">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="kraj" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:short" name="rocznik"/>
+                    <xs:element type="xs:string" name="typ"/>
+                    <xs:element type="xs:int" name="przebieg"/>
+                    <xs:element type="xs:string" name="rodzaj_silnika"/>
+                    <xs:element type="xs:string" name="pojemność_silnika"/>
+                    <xs:element type="xs:int" name="cena"/>
+                    <xs:element type="xs:date" name="data_umieszczenia_ogłoszenia"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="ID" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="marki">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="marka" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="koncern"/>
+                    <xs:element type="xs:short" name="rok_założenia"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="markaID" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
