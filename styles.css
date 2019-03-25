@@ -2,7 +2,7 @@ dokument {
 	background-color: #8DB8EE;
 }
 
-autorzy:before {
+autorzy::before {
 	content: 'Autorzy:';
 	text-align: center;
 	font-size: 30px;
@@ -31,7 +31,7 @@ autorzy > autor{
 	list-style-type: upper-roman;
 }
 
-zmiany:before {
+zmiany::before {
 	content: 'Zmiany w dokumencie:';
 	text-align: center;
 	font-size: 30px;
@@ -103,7 +103,6 @@ koncern, rok_założenia {
 	padding-top: 3px;
 	font-family: Calibri;
 	font-size: 15px;
-	background-color: 
 }
 
 baza::before {

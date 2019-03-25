@@ -25,7 +25,7 @@
 <!ELEMENT marka_auta EMPTY>
     <!ATTLIST marka_auta markaID IDREFS #IMPLIED>
 <!ELEMENT model (#PCDATA)>
-<!ATTLIST model kraj CDATA #REQUIRED>
+    <!ATTLIST model kraj (Niemcy|Japonia|Korea|Włochy|USA|Wielka_Brytania|Czechy) "Niemcy">
 <!ELEMENT rocznik (#PCDATA)>
 <!ELEMENT typ (#PCDATA)>
 <!ELEMENT przebieg (#PCDATA)>
