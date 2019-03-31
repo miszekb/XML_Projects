@@ -284,6 +284,7 @@
 			<data_umieszczenia_ogłoszenia>2018-09-11</data_umieszczenia_ogłoszenia>
 		</samochód>
 	</baza>
+
 		<marki>
 
 		<marka markaID="M1">
@@ -291,7 +292,7 @@
 			<rok_założenia>1931</rok_założenia>
 		</marka>
 		<marka markaID="M2">
-			<koncern>BMW</koncern>
+			<span><koncern>BMW</koncern></span>
 			<rok_założenia>1916</rok_założenia>
 		</marka>
 		<marka markaID="M3">

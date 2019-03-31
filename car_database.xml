@@ -2,6 +2,7 @@
 <?xml-stylesheet type="text/css" href="styles.css" ?>
 <!DOCTYPE dokument SYSTEM "car_database.dtd">
 <!-- XML Car Database created by Michał Mamona & Michał Białecki [2019]-->
+<dokument>
 <!--		<info>
 			Przeglądasz obecnie bazę samochodów wraz z ich podstawowymi parametrami
 			sporządzoną w ramach przedmiotu "Programowanie Komunikacji Człowiek-Komputer".

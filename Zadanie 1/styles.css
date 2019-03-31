@@ -20,16 +20,35 @@ autorzy > autor{
 	border-width: 5px;
 	border-color: black;
 	text-align: center;
+	z-index:0;
 	margin:20px;
 	border-radius: 20px;
 	margin-left: 40px;
 	margin-top: 10px;
 	width: 20%;
 	display: list-item;
+	position: relative;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	list-style-type: upper-roman;
 }
+
+
+
+autor:before {
+	content: "";
+	position: absolute;
+	z-index:-1;
+	top: 0;  left: 0;  right: 0;  bottom: 0;
+	background: #00ff99;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition: transform .3s ease-out;
+	border-radius: 20px;
+}
+
+autor:hover:before{transform: scaleX(1);}
+
 
 zmiany::before {
 	content: 'Zmiany w dokumencie:';
@@ -79,12 +98,24 @@ marki {
 	margin-top: 20px;
 	margin-left: 90px;
 	width: 30%;
+	table-layout: fixed;
 }
 
-marki::before {
-	content: 'Spis koncernów samochodowych';
-	font-family: Calibri;
-	font-size: 20px;
+
+marka:first-of-type:before { 
+	content: 'Koncern';
+	display: table-caption;
+	align-self: left;
+	border-width: 1px;
+	border-style: solid;
+}
+
+marka:nth-of-type(2):before { 
+	content: 'Rok założenia';
+	display: table-caption;
+	align-self: left;
+	border-width: 1px;
+	border-style: solid;
 }
 
 marka {
