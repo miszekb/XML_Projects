@@ -5,7 +5,8 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-
+        
+        <!--baza autorów dokumentu -->
         <xs:element name="autorzy">
           <xs:complexType>
             <xs:sequence>
@@ -22,6 +23,8 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+
+        <!--baza zmian w dokumencie -->
         <xs:element name="zmiany">
           <xs:complexType>
             <xs:sequence>
@@ -29,11 +32,15 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+
+
         <xs:element name="baza">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="samochód" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
+
+                  <xs:group name="parametry">
                   <xs:sequence>
                     <xs:element name="marka_auta">
                       <xs:complexType>
@@ -67,23 +74,27 @@
 
                     <xs:element type="xs:int" name="przebieg"/>
 
-                    <xs:element type= "xs:simpleType" name="rodzaj_silnika"/>
+                    <xs:element type= "xs:simpleType" name="rodzaj_silnika">
                       <xs:restriction base="xs:string">
                         <xs:enumeration value="Diesel"/>
                         <xs:enumeration value="Benzyna" />
                         <xs:enumeration value="Elektryczny"/>
                       </xs:restriction>
+                    </xs:element>
 
                     <xs:element type="xs:float" name="pojemność_silnika"/>
                     <xs:element type="xs:int" name="cena"/>
                     <xs:element type="xs:date" name="data_umieszczenia_ogłoszenia"/>
                   </xs:sequence>
+                </xs:group>
                   <xs:attribute type="xs:string" name="ID" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+
+        <!--Baza marek aut-->
         <xs:element name="marki">
           <xs:complexType>
             <xs:sequence>
@@ -108,6 +119,8 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <!-- -->
+
       </xs:sequence>
     </xs:complexType>
   </xs:element>
