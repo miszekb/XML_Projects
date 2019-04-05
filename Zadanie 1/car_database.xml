@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="styles.css" ?>
-<!DOCTYPE dokument SYSTEM "car_database.dtd">
+<!-- <!DOCTYPE dokument SYSTEM "car_database.dtd"> -->
 <!-- XML Car Database created by Michał Mamona & Michał Białecki [2019]-->
-<dokument>
+<dokument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="generated_schema.xsd">
 <!--		<info>
 			Przeglądasz obecnie bazę samochodów wraz z ich podstawowymi parametrami
 			sporządzoną w ramach przedmiotu "Programowanie Komunikacji Człowiek-Komputer".
@@ -27,7 +27,7 @@
 			<przebieg>248000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>1.8</pojemność_silnika>
-			<cena>26700</cena>
+			<cena waluta="PLN">26700</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-30</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto2">
@@ -38,7 +38,7 @@
 			<przebieg>59500</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>1.6</pojemność_silnika>
-			<cena>52900</cena>
+			<cena waluta="PLN">52900</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-27</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto3">
@@ -49,7 +49,7 @@
 			<przebieg>1</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.2</pojemność_silnika>
-			<cena>165914</cena>
+			<cena waluta="PLN">165914</cena>
 			<data_umieszczenia_ogłoszenia>2018-10-19</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto4">
@@ -60,7 +60,7 @@
 			<przebieg>110000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>4.0</pojemność_silnika>
-			<cena>89900</cena>
+			<cena waluta="PLN">89900</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-04</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto5">
@@ -71,7 +71,7 @@
 			<przebieg>150000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>0.8</pojemność_silnika>
-			<cena>30000</cena>
+			<cena waluta="PLN">30000</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-03</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto6">
@@ -82,7 +82,7 @@
 			<przebieg>144000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>1.2</pojemność_silnika>
-			<cena>41800</cena>
+			<cena waluta="PLN">41800</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-25</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto7">
@@ -93,7 +93,7 @@
 			<przebieg>367862</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.5</pojemność_silnika>
-			<cena>59500</cena>
+			<cena waluta="PLN">59500</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-07</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto8">
@@ -104,7 +104,7 @@
 			<przebieg>5500</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>5.0</pojemność_silnika>
-			<cena>230000</cena>
+			<cena waluta="PLN">230000</cena>
 			<data_umieszczenia_ogłoszenia>2019-01-23</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto9">
@@ -115,7 +115,7 @@
 			<przebieg>196000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>5.5</pojemność_silnika>
-			<cena>649000</cena>
+			<cena waluta="PLN">649000</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-22</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto10">
@@ -126,7 +126,7 @@
 			<przebieg>436581</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>7.0</pojemność_silnika>
-			<cena>29000</cena>
+			<cena waluta="PLN">29000</cena>
 			<data_umieszczenia_ogłoszenia>2018-09-12</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto11">
@@ -137,7 +137,7 @@
 			<przebieg>167000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>1.3</pojemność_silnika>
-			<cena>22555</cena>
+			<cena waluta="PLN">22555</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-04</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto12">
@@ -148,7 +148,7 @@
 			<przebieg>162000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>5.2</pojemność_silnika>
-			<cena>45900</cena>
+			<cena waluta="PLN">45900</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-28</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto13">
@@ -159,7 +159,7 @@
 			<przebieg>223000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>3.8</pojemność_silnika>
-			<cena>49500</cena>
+			<cena waluta="PLN">49500</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-01</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto14">
@@ -170,7 +170,7 @@
 			<przebieg>1</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>2.9</pojemność_silnika>
-			<cena>91900</cena>
+			<cena waluta="PLN">91900</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-09</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto15">
@@ -181,7 +181,7 @@
 			<przebieg>1</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>2.5</pojemność_silnika>
-			<cena>99900</cena>
+			<cena waluta="PLN">99900</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-05</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto16">
@@ -192,7 +192,7 @@
 			<przebieg>400000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>8.1</pojemność_silnika>
-			<cena>120500</cena>
+			<cena waluta="PLN">120500</cena>
 			<data_umieszczenia_ogłoszenia>2018-10-30</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto17">
@@ -203,7 +203,7 @@
 			<przebieg>7</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.4</pojemność_silnika>
-			<cena>108060</cena>
+			<cena waluta="PLN">108060</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-21</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto18">
@@ -214,7 +214,7 @@
 			<przebieg>109870</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.1</pojemność_silnika>
-			<cena>58000</cena>
+			<cena waluta="PLN">58000</cena>
 			<data_umieszczenia_ogłoszenia>2018-11-26</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto19">
@@ -225,7 +225,7 @@
 			<przebieg>294500</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>3.5</pojemność_silnika>
-			<cena>24900</cena>
+			<cena waluta="PLN">24900</cena>
 			<data_umieszczenia_ogłoszenia>2019-02-09</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto20">
@@ -235,8 +235,8 @@
 			<typ>Auta małe</typ>
 			<przebieg>26556</przebieg>
 			<rodzaj_silnika>Elektryczny</rodzaj_silnika>
-			<pojemność_silnika> </pojemność_silnika>
-			<cena>68900</cena>
+			<pojemność_silnika>1.0</pojemność_silnika>
+			<cena waluta="PLN">68900</cena>
 			<data_umieszczenia_ogłoszenia>2018-12-21</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto21">
@@ -247,7 +247,7 @@
 			<przebieg>94901</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>5.3</pojemność_silnika>
-			<cena>49999</cena>
+			<cena waluta="PLN">49999</cena>
 			<data_umieszczenia_ogłoszenia>2018-08-25</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto22">
@@ -258,7 +258,7 @@
 			<przebieg>42600</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>2.6</pojemność_silnika>
-			<cena>91900</cena>
+			<cena waluta="PLN">91900</cena>
 			<data_umieszczenia_ogłoszenia>2019-03-06</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto23">
@@ -269,7 +269,7 @@
 			<przebieg>59945</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>1.8</pojemność_silnika>
-			<cena>49900</cena>
+			<cena waluta="PLN">49900</cena>
 			<data_umieszczenia_ogłoszenia>2018-10-17</data_umieszczenia_ogłoszenia>
 		</samochód>
 		<samochód ID="auto24">
@@ -280,7 +280,7 @@
 			<przebieg>34000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>5.5</pojemność_silnika>
-			<cena>624865</cena>
+			<cena waluta="PLN">624865</cena>
 			<data_umieszczenia_ogłoszenia>2018-09-11</data_umieszczenia_ogłoszenia>
 		</samochód>
 	</baza>
