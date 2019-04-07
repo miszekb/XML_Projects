@@ -1,13 +1,12 @@
 <?xml version = "1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
-  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="dokument">
     <xs:annotation>
       <xs:documentation>XML Car Database created by Michał Mamona &amp; Michał Białecki [2019]</xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-
+        
         <!--baza autorów dokumentu -->
         <xs:element name="autorzy">
           <xs:complexType>
@@ -39,10 +38,11 @@
         <xs:element name="baza">
           <xs:complexType>
             <xs:sequence>
+              <!-- pojedynczy sammochód-->
               <xs:element name="samochód" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
-
                   <xs:sequence>
+
                     <xs:element name="marka_auta">
                       <xs:complexType>
                         <xs:simpleContent>
@@ -52,6 +52,7 @@
                         </xs:simpleContent>
                       </xs:complexType>
                     </xs:element>
+
                     <xs:element name="model">
                       <xs:complexType>
                         <xs:simpleContent>
@@ -61,6 +62,7 @@
                         </xs:simpleContent>
                       </xs:complexType>
                     </xs:element>
+
                     <xs:element name="rocznik">
                       <xs:simpleType>
                         <xs:restriction base="xs:short">
@@ -72,7 +74,7 @@
 
                     <xs:element type="xs:string" name="typ"/>
 
-                    <xs:element name="przebieg">
+                     <xs:element name="przebieg">
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:int">
@@ -89,9 +91,19 @@
                       </xs:complexType>
                     </xs:element>
 
-                    <xs:element type="xs:string" name="rodzaj_silnika"/>
+                    <!-- Przykład ograniczenia -->
+                    <xs:element name="rodzaj_silnika">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Diesel"/>
+                          <xs:enumeration value="Benzyna" />
+                          <xs:enumeration value="Elektryczny"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
 
                     <xs:element type="xs:float" name="pojemność_silnika"/>
+                    
                     <xs:element name="cena">
                       <xs:complexType>
                         <xs:simpleContent>
@@ -104,39 +116,47 @@
 
                     <xs:element type="xs:date" name="data_umieszczenia_ogłoszenia"/>
                   </xs:sequence>
-
                   <xs:attribute type="xs:string" name="ID" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
+
+          <!-- klucze i referencje -->
           <xs:key name="ID">
             <xs:selector xpath="dokument/baza/samochód"/>
             <xs:field xpath="@ID"/>
-          </xs:key>
-          <xs:key name="markaID">
+        </xs:key>
+        <xs:key name="markaID">
             <xs:selector xpath="dokument/marki/marka"/>
             <xs:field xpath="@markaID"/>
-          </xs:key>
-          <xs:keyref name="marka_referencja" refer="markaID">
+        </xs:key>
+        <xs:keyref name="marka_referencja" refer="markaID">
             <xs:selector xpath="dokument/baza/samochód/marka_auta"/>
             <xs:field xpath="@markaID"/>
-          </xs:keyref>
+        </xs:keyref>
 
-        </xs:element>
-
+        </xs:element> <!-- koniec bazy -->
+ 
         <!--Baza marek aut-->
         <xs:element name="marki">
           <xs:complexType>
+            <xs:group ref="marki_info"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element> <!-- koniec elementu "dokument"-->
+
+        <!-- definicja grupy -->
+        <xs:group name="marki_info">
             <xs:sequence>
               <xs:element name="marka" maxOccurs="unbounded" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
-
                     <xs:element type="xs:string" name="koncern"/>
-
                     <xs:element name="rok_założenia">
-                      <xs:simpleType>
+                     <xs:simpleType>
                         <xs:restriction base="xs:integer">
                           <xs:pattern value="[0-9][0-9][0-9][0-9]"/>
                         </xs:restriction>
@@ -147,19 +167,6 @@
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <!--Klucze i referencje -->
+        </xs:group>
 
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-
-  <xs:simpleType name="rodzaj_silnika">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Diesel"/>
-      <xs:enumeration value="Benzyna" />
-      <xs:enumeration value="Elektryczny"/>
-    </xs:restriction>
-  </xs:simpleType>
 </xs:schema>
