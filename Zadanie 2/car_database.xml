@@ -24,7 +24,7 @@
 			<model kraj="Niemcy">Sharan</model>
 			<rocznik>2008</rocznik>
 			<typ>Minivan</typ>
-			<przebieg>248000</przebieg>
+			<przebieg jednostki="km">248000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>1.8</pojemność_silnika>
 			<cena waluta="PLN">26700</cena>
@@ -35,7 +35,7 @@
 			<model kraj="Japonia">Auris</model>
 			<rocznik>2016</rocznik>
 			<typ>Kombi</typ>
-			<przebieg>59500</przebieg>
+			<przebieg jednostki="km">59500</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>1.6</pojemność_silnika>
 			<cena waluta="PLN">52900</cena>
@@ -46,7 +46,7 @@
 			<model kraj="Niemcy">A4</model>
 			<rocznik>2018</rocznik>
 			<typ>Kombi</typ>
-			<przebieg>1</przebieg>
+			<przebieg jednostki="km">1</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.2</pojemność_silnika>
 			<cena waluta="PLN">165914</cena>
@@ -57,7 +57,7 @@
 			<model kraj="Niemcy">X6</model>
 			<rocznik>2008</rocznik>
 			<typ>SUV</typ>
-			<przebieg>110000</przebieg>
+			<przebieg jednostki="km">110000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>4.0</pojemność_silnika>
 			<cena waluta="PLN">89900</cena>
@@ -68,7 +68,7 @@
 			<model kraj="Wielka_Brytania">Cooper S</model>
 			<rocznik>2007</rocznik>
 			<typ>Auta małe</typ>
-			<przebieg>150000</przebieg>
+			<przebieg jednostki="km">150000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>0.8</pojemność_silnika>
 			<cena waluta="PLN">30000</cena>
@@ -79,7 +79,7 @@
 			<model kraj="Włochy">Giulietta</model>
 			<rocznik>2012</rocznik>
 			<typ>Kompakt</typ>
-			<przebieg>144000</przebieg>
+			<przebieg jednostki="km">144000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>1.2</pojemność_silnika>
 			<cena waluta="PLN">41800</cena>
@@ -90,7 +90,7 @@
 			<model kraj="Niemcy">Touareg</model>
 			<rocznik>2010</rocznik>
 			<typ>SUV</typ>
-			<przebieg>367862</przebieg>
+			<przebieg jednostki="km">367862</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.5</pojemność_silnika>
 			<cena waluta="PLN">59500</cena>
@@ -101,7 +101,7 @@
 			<model kraj="Wielka_Brytania">F-Pace</model>
 			<rocznik>2018</rocznik>
 			<typ>SUV</typ>
-			<przebieg>5500</przebieg>
+			<przebieg jednostki="km">5500</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>5.0</pojemność_silnika>
 			<cena waluta="PLN">230000</cena>
@@ -112,7 +112,7 @@
 			<model kraj="USA">Grand Cherokee IV</model>
 			<rocznik>2011</rocznik>
 			<typ>SUV</typ>
-			<przebieg>196000</przebieg>
+			<przebieg jednostki="km">196000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>5.5</pojemność_silnika>
 			<cena waluta="PLN">649000</cena>
@@ -123,7 +123,7 @@
 			<model kraj="Włochy">Magirus</model>
 			<rocznik>1984</rocznik>
 			<typ>Tir</typ>
-			<przebieg>436581</przebieg>
+			<przebieg jednostki="km">436581</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>7.0</pojemność_silnika>
 			<cena waluta="PLN">29000</cena>
@@ -134,7 +134,7 @@
 			<model kraj="Czechy">Fabia II</model>
 			<rocznik>2013</rocznik>
 			<typ>Kombi</typ>
-			<przebieg>167000</przebieg>
+			<przebieg jednostki="km">167000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>1.3</pojemność_silnika>
 			<cena waluta="PLN">22555</cena>
@@ -145,7 +145,7 @@
 			<model kraj="Niemcy">A6 C6</model>
 			<rocznik>2010</rocznik>
 			<typ>Sedan</typ>
-			<przebieg>162000</przebieg>
+			<przebieg jednostki="km">162000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>5.2</pojemność_silnika>
 			<cena waluta="PLN">45900</cena>
@@ -156,7 +156,7 @@
 			<model kraj="Japonia">6 III</model>
 			<rocznik>2014</rocznik>
 			<typ>Sedan</typ>
-			<przebieg>223000</przebieg>
+			<przebieg jednostki="km">223000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>3.8</pojemność_silnika>
 			<cena waluta="PLN">49500</cena>
@@ -167,7 +167,7 @@
 			<model kraj="Japonia">Qashqai II</model>
 			<rocznik>2018</rocznik>
 			<typ>SUV</typ>
-			<przebieg>1</przebieg>
+			<przebieg jednostki="km">1</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>2.9</pojemność_silnika>
 			<cena waluta="PLN">91900</cena>
@@ -178,7 +178,7 @@
 			<model kraj="Niemcy">Astra K</model>
 			<rocznik>2018</rocznik>
 			<typ>Kombi</typ>
-			<przebieg>1</przebieg>
+			<przebieg jednostki="km">1</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>2.5</pojemność_silnika>
 			<cena waluta="PLN">99900</cena>
@@ -189,7 +189,7 @@
 			<model kraj="Niemcy">TGX</model>
 			<rocznik>2015</rocznik>
 			<typ>Tir</typ>
-			<przebieg>400000</przebieg>
+			<przebieg jednostki="km">400000</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>8.1</pojemność_silnika>
 			<cena waluta="PLN">120500</cena>
@@ -200,7 +200,7 @@
 			<model kraj="Niemcy">Caravelle</model>
 			<rocznik>2018</rocznik>
 			<typ>Minivan</typ>
-			<przebieg>7</przebieg>
+			<przebieg jednostki="km">7</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.4</pojemność_silnika>
 			<cena waluta="PLN">108060</cena>
@@ -211,7 +211,7 @@
 			<model kraj="Korea">Optima</model>
 			<rocznik>2015</rocznik>
 			<typ>Sedan</typ>
-			<przebieg>109870</przebieg>
+			<przebieg jednostki="km">109870</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>3.1</pojemność_silnika>
 			<cena waluta="PLN">58000</cena>
@@ -222,7 +222,7 @@
 			<model kraj="Japonia">Legacy IV</model>
 			<rocznik>2008</rocznik>
 			<typ>Kombi</typ>
-			<przebieg>294500</przebieg>
+			<przebieg jednostki="km">294500</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>3.5</pojemność_silnika>
 			<cena waluta="PLN">24900</cena>
@@ -233,7 +233,7 @@
 			<model kraj="Włochy">500</model>
 			<rocznik>2013</rocznik>
 			<typ>Auta małe</typ>
-			<przebieg>26556</przebieg>
+			<przebieg jednostki="km">26556</przebieg>
 			<rodzaj_silnika>Elektryczny</rodzaj_silnika>
 			<pojemność_silnika>0.0</pojemność_silnika>
 			<cena waluta="PLN">68900</cena>
@@ -244,7 +244,7 @@
 			<model kraj="USA">Camaro</model>
 			<rocznik>2013</rocznik>
 			<typ>Coupe</typ>
-			<przebieg>94901</przebieg>
+			<przebieg jednostki="km">94901</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>5.3</pojemność_silnika>
 			<cena waluta="PLN">49999</cena>
@@ -255,7 +255,7 @@
 			<model kraj="Niemcy">Insignia B</model>
 			<rocznik>2017</rocznik>
 			<typ>Kombi</typ>
-			<przebieg>42600</przebieg>
+			<przebieg jednostki="km">42600</przebieg>
 			<rodzaj_silnika>Diesel</rodzaj_silnika>
 			<pojemność_silnika>2.6</pojemność_silnika>
 			<cena waluta="PLN">91900</cena>
@@ -266,7 +266,7 @@
 			<model kraj="Włochy">Diablo II</model>
 			<rocznik>2016</rocznik>
 			<typ>Minivan</typ>
-			<przebieg>59945</przebieg>
+			<przebieg jednostki="km">59945</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>1.8</pojemność_silnika>
 			<cena waluta="PLN">49900</cena>
@@ -277,7 +277,7 @@
 			<model kraj="Niemcy">Panamera</model>
 			<rocznik>2017</rocznik>
 			<typ>Sedan</typ>
-			<przebieg>34000</przebieg>
+			<przebieg jednostki="km">34000</przebieg>
 			<rodzaj_silnika>Benzyna</rodzaj_silnika>
 			<pojemność_silnika>5.5</pojemność_silnika>
 			<cena waluta="PLN">624865</cena>
