@@ -128,7 +128,7 @@ koncern, rok_założenia {
 	width: auto;
 	border-style: solid;
 	border-width: 1px;
-	padding-left: 30px;0
+	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 3px;
 	padding-top: 3px;
@@ -189,7 +189,13 @@ model, rocznik, typ, przebieg, rodzaj_silnika, pojemność_silnika, cena, data_u
 	padding: 3px;
 	width: auto;
 }
+cena::after{
+	content: " " attr(waluta);
+}
 
+przebieg::after{
+	content: " " attr(jednostki);
+}
 marka_auta {
 	display: none;
 }
