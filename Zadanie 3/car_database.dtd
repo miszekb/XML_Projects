@@ -1,0 +1,40 @@
+<?xml encoding="UTF-8"?>
+
+<!-- główny kontener -->
+<!ELEMENT dokument (autorzy,zmiany,baza,marki)>
+<!-- autorzy dokumentu -->
+    <!ELEMENT autorzy (autor)+>
+        <!ELEMENT autor (#PCDATA)>
+        <!ATTLIST autor github CDATA #REQUIRED grupa_TGSK CDATA #REQUIRED>
+<!-- daty zmian w dokumencie -->
+    <!ELEMENT zmiany (zmiana)+>
+        <!ELEMENT zmiana (#PCDATA)>
+<!-- baza samochodów -->     
+    <!ELEMENT baza (samochód)+>
+        <!ELEMENT samochód (marka_auta,model,rocznik,typ,przebieg,
+                    rodzaj_silnika,pojemność_silnika,cena,
+                    data_umieszczenia_ogłoszenia)>
+        <!ATTLIST samochód ID CDATA #REQUIRED>
+<!--spis marek-->
+    <!ELEMENT marki (marka+)>
+        <!ELEMENT marka (koncern,rok_założenia)>
+        <!ATTLIST marka markaID ID #REQUIRED>
+
+<!-- parametry samochodów -->
+<!ELEMENT marka_auta EMPTY>
+
+
+    <!ATTLIST marka_auta markaID IDREF #IMPLIED>
+<!ELEMENT model (#PCDATA)>
+    <!ATTLIST model kraj (Niemcy|Japonia|Korea|Włochy|USA|Wielka_Brytania|Czechy) "Niemcy">
+<!ELEMENT rocznik (#PCDATA)>
+<!ELEMENT typ (#PCDATA)>
+<!ELEMENT przebieg (#PCDATA)>
+<!ELEMENT rodzaj_silnika (#PCDATA)>
+<!ELEMENT pojemność_silnika (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ELEMENT data_umieszczenia_ogłoszenia (#PCDATA)>
+
+<!-- dane na temat marki -->
+<!ELEMENT koncern (#PCDATA)>
+<!ELEMENT rok_założenia (#PCDATA)>

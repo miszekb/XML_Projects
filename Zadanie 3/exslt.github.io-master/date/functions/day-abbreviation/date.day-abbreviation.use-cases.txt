@@ -1,3 +1,0 @@
-../../../howto.html
-../../index.html
-date.day-abbreviation.html

@@ -1,3 +1,0 @@
-../../../howto.html
-../../index.html
-math.atan2.html

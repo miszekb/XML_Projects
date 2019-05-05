@@ -1,3 +1,0 @@
-../../../howto.html
-../../index.html
-math.log.html

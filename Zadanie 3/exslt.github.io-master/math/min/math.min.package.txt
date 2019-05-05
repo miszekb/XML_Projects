@@ -1,7 +1,0 @@
-../../howto.html
-../index.html
-math.min.html
-math.min.xsl
-math.min.function.xsl
-math.min.template.xsl
-math.min.js
