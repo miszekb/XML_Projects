@@ -47,7 +47,7 @@
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:string">
-                            <xs:attribute type="xs:string" name="markaID" use="required"/>
+                            <xs:attribute type="xs:IDREF" name="markaID" use="required"/>
                           </xs:extension>
                         </xs:simpleContent>
                       </xs:complexType>
@@ -94,7 +94,7 @@
                     <!-- Przykład ograniczenia -->
                     <xs:element name="rodzaj_silnika">
                       <xs:simpleType>
-                        <xs:restriction base="xs:string">
+                        <xs:restriction base="xs:token">
                           <xs:enumeration value="Diesel"/>
                           <xs:enumeration value="Benzyna" />
                           <xs:enumeration value="Elektryczny"/>
@@ -108,7 +108,7 @@
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:int">
-                            <xs:attribute type="xs:string" name="waluta" use="required"/>
+                            <xs:attribute type="xs:token" name="waluta" use="required"/>
                           </xs:extension>
                         </xs:simpleContent>
                       </xs:complexType>
@@ -116,7 +116,7 @@
 
                     <xs:element type="xs:date" name="data_umieszczenia_ogłoszenia"/>
                   </xs:sequence>
-                  <xs:attribute type="xs:string" name="ID" use="required"/>
+                  <xs:attribute type="xs:ID" name="ID" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
