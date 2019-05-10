@@ -41,12 +41,12 @@
          </xsl:for-each>
         </Auta_posortowane>
 
-        <Liczba_wszystkich_samochodów>
+        <Liczba_wszystkich_aut>
           <xsl:value-of select="count(//samochód)" />
-        </Liczba_wszystkich_samochodów>
-        <Suma_cen_wszystkich_samochodów>
+        </Liczba_wszystkich_aut>
+        <Suma_cen_wszystkich_aut>
           <xsl:value-of select="sum(//cena)" />
-        </Suma_cen_wszystkich_samochodów>
+        </Suma_cen_wszystkich_aut>
         <Liczba_volkswagenów>
           <xsl:value-of select="count(//marka_auta[@markaID='M1'])"/>
         </Liczba_volkswagenów>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="car_database.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="xhtml_Template.xsl" ?>
 
 <!-- <!DOCTYPE dokument SYSTEM "car_database.dtd"> -->
 <!-- XML Car Database created by Michał Mamona & Michał Białecki [2019]-->
