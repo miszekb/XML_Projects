@@ -11,7 +11,7 @@
   <h1>WYGENEROWANY RAPORT</h1>
   <!--Nagłówki-->
   <h4>Auta posortowane według daty ogłoszenia (od najwcześniejszego)</h4>
-  <table>
+  <table border="1">
     <tr>
       <th>Lp.</th>
       <th>Marka</th>
@@ -40,8 +40,14 @@
       </tr>
     </xsl:for-each>
   </table>
-    <h4>Auta posortowane według klucza</h4>
+    <h4>Marki posortowane według ilości aut</h4>
     <table>
+       <tr>
+        <th>Lp.</th>
+        <th>Marka</th>
+        <th>Rok założenia</th>
+        <th>Suma cen aut</th>
+      </tr>
            <xsl:for-each select="//Marki_posortowane/marka">
             <tr>
               <td><xsl:value-of select="Lp_marki"/></td>
@@ -51,7 +57,7 @@
               <td><xsl:value-of select="Suma_cen_aut"/> zł</td>
             </tr>
            </xsl:for-each>
-    </table>
+    </table border="1">
           <h3>Podsumowanie</h3>
           Liczba wszystkich samochodów: <b><xsl:value-of select="//Liczba_wszystkich_aut" /></b>
           <br></br>
