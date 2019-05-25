@@ -4,10 +4,6 @@
 
   <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 
-  <xsl:template match="node()"/>
-
-  <xsl:key use="@markaId" name="MarkaKey" match="//marka"/>
-
   <xsl:template match="/">
     <document>
       <Auta_posortowane>
@@ -123,7 +119,7 @@
       </Najmłodsze_auto>
 
       <Data_wygenerowania_raportu>
-        <xsl:value-of select="current-time()"/>
+        <xsl:value-of select="current-date()"/>
       </Data_wygenerowania_raportu>
 
       <Marki_posortowane>
