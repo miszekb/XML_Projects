@@ -351,23 +351,23 @@
    
    
       <rect x="35.625"
-         y="525.5208333333333"
+         y="475.52083333333326"
          width="30.625"
          height="269.4791666666667"
          fill="#86af49"/>
-   <rect x="0" y="800" width="600" height="5" fill="black"/>
+   <rect x="0" y="750" width="600" height="5" fill="black"/>
       <rect x="96.875"
-         y="587.7083333333333"
+         y="537.7083333333333"
          width="30.625"
          height="207.29166666666669"
          fill="#86af49"/>
-   <rect x="0" y="800" width="600" height="5" fill="black"/>
+   <rect x="0" y="750" width="600" height="5" fill="black"/>
       <rect x="158.125"
-         y="774.2708333333334"
+         y="724.2708333333334"
          width="30.625"
          height="20.729166666666668"
          fill="#86af49"/>
-   <rect x="0" y="800" width="600" height="5" fill="black"/>
+   <rect x="0" y="750" width="600" height="5" fill="black"/>
    
    
 			
@@ -530,17 +530,69 @@
 <text x="450"
          y="160"
          fill="black"
-         style="font-family:Georgia; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
+         style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
    <text x="450"
          y="500"
          fill="black"
-         style="font-family:Georgia; font-weight: bold; font-size: 28px;">Ilość aut z danym silnikiem</text>
+         style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut z danym silnikiem</text>
    <text x="10"
-         y="700"
+         y="850"
          fill="black"
-         style="font-family:Georgia; font-weight: bold; font-size: 16px;">Najstarsze auto</text>
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">Ilość wszystkich aut:</text>
    <text x="10"
-         y="720"
+         y="875"
          fill="black"
-         style="font-family:Georgia; font-weight: bold; font-size: 16px;">Najmłodsze auto</text>
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">Najstarsze auto:</text>
+   <text x="10"
+         y="900"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">Najmłodsze auto:</text>
+   <text x="10"
+         y="950"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">Suma cen wszystkich aut:</text>
+   <text x="10"
+         y="975"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">Ilość volkswagenów:</text>
+   <text x="200"
+         y="850"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">24</text>
+   <text x="200"
+         y="875"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">
+			
+			Magirus
+			1984
+			Tir
+			436581
+			Diesel
+			7.0
+			29000
+			2018-09-12
+   </text>
+   <text x="200"
+         y="900"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">
+			
+			A4
+			2018
+			Kombi
+			1
+			Diesel
+			3.2
+			165914
+			2018-10-19
+   </text>
+   <text x="200"
+         y="950"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">2.881493E6 zł</text>
+   <text x="200"
+         y="975"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">3</text>
 </svg>
