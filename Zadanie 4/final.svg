@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg
+  PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1000"
+     height="1000">
+      y_steps = 62.1875<rect x="1" y="1" width="1000" height="1000" fill="#e3eaa7"/>
+   
+      
+         1
+         Chevrolet
+         Camaro
+         2013
+         Coupe
+         94901
+         Benzyna
+         5.3
+         49999
+         2018-08-25
+      
+      
+         2
+         Porsche
+         Panamera
+         2017
+         Sedan
+         34000
+         Benzyna
+         5.5
+         624865
+         2018-09-11
+      
+      
+         3
+         Iveco
+         Magirus
+         1984
+         Tir
+         436581
+         Diesel
+         7.0
+         29000
+         2018-09-12
+      
+      
+         4
+         Fiat
+         Diablo II
+         2016
+         Minivan
+         59945
+         Benzyna
+         1.8
+         49900
+         2018-10-17
+      
+      
+         5
+         Audi
+         A4
+         2018
+         Kombi
+         1
+         Diesel
+         3.2
+         165914
+         2018-10-19
+      
+      
+         6
+         Man
+         TGX
+         2015
+         Tir
+         400000
+         Diesel
+         8.1
+         120500
+         2018-10-30
+      
+      
+         7
+         Alfa Romeo
+         Giulietta
+         2012
+         Kompakt
+         144000
+         Benzyna
+         1.2
+         41800
+         2018-11-25
+      
+      
+         8
+         Kia
+         Optima
+         2015
+         Sedan
+         109870
+         Diesel
+         3.1
+         58000
+         2018-11-26
+      
+      
+         9
+         Toyota
+         Auris
+         2016
+         Kombi
+         59500
+         Diesel
+         1.6
+         52900
+         2018-11-27
+      
+      
+         10
+         Audi
+         A6 C6
+         2010
+         Sedan
+         162000
+         Diesel
+         5.2
+         45900
+         2018-11-28
+      
+      
+         11
+         Nissan
+         Qashqai II
+         2018
+         SUV
+         1
+         Diesel
+         2.9
+         91900
+         2018-12-09
+      
+      
+         12
+         Fiat
+         500
+         2013
+         Auta małe
+         26556
+         Elektryczny
+         0.0
+         68900
+         2018-12-21
+      
+      
+         13
+         Jeep
+         Grand Cherokee IV
+         2011
+         SUV
+         196000
+         Benzyna
+         5.5
+         649000
+         2018-12-22
+      
+      
+         14
+         Volkswagen
+         Sharan
+         2008
+         Minivan
+         248000
+         Diesel
+         1.8
+         26700
+         2018-12-30
+      
+      
+         15
+         Jaguar
+         F-Pace
+         2018
+         SUV
+         5500
+         Diesel
+         5.0
+         230000
+         2019-01-23
+      
+      
+         16
+         Mazda
+         6 III
+         2014
+         Sedan
+         223000
+         Benzyna
+         3.8
+         49500
+         2019-02-01
+      
+      
+         17
+         BMW
+         X6
+         2008
+         SUV
+         110000
+         Diesel
+         4.0
+         89900
+         2019-02-04
+      
+      
+         18
+         Volkswagen
+         Touareg
+         2010
+         SUV
+         367862
+         Diesel
+         3.5
+         59500
+         2019-02-07
+      
+      
+         19
+         Subaru
+         Legacy IV
+         2008
+         Kombi
+         294500
+         Benzyna
+         3.5
+         24900
+         2019-02-09
+      
+      
+         20
+         Volkswagen
+         Caravelle
+         2018
+         Minivan
+         7
+         Diesel
+         3.4
+         108060
+         2019-02-21
+      
+      
+         21
+         Mini
+         Cooper S
+         2007
+         Auta małe
+         150000
+         Benzyna
+         0.8
+         30000
+         2019-03-03
+      
+      
+         22
+         Skoda
+         Fabia II
+         2013
+         Kombi
+         167000
+         Benzyna
+         1.3
+         22555
+         2019-03-04
+      
+      
+         23
+         Opel
+         Astra K
+         2018
+         Kombi
+         1
+         Benzyna
+         2.5
+         99900
+         2019-03-05
+      
+      
+         24
+         Opel
+         Insignia B
+         2017
+         Kombi
+         42600
+         Diesel
+         2.6
+         91900
+         2019-03-06
+      
+   
+   24
+   2.881493E6
+   3
+   
+      <rect x="35.625"
+         y="84.0625"
+         width="30.625"
+         height="310.9375"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+      <rect x="96.875"
+         y="146.25"
+         width="30.625"
+         height="248.75"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+      <rect x="158.125"
+         y="332.8125"
+         width="30.625"
+         height="62.1875"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+      <rect x="219.375"
+         y="208.4375"
+         width="30.625"
+         height="186.5625"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+      <rect x="280.625"
+         y="270.625"
+         width="30.625"
+         height="124.375"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+      <rect x="341.875"
+         y="270.625"
+         width="30.625"
+         height="124.375"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+      <rect x="403.125"
+         y="270.625"
+         width="30.625"
+         height="124.375"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+      <rect x="464.375"
+         y="270.625"
+         width="30.625"
+         height="124.375"
+         fill="#86af49"/>
+   <rect x="0" y="400" width="600" height="5" fill="black"/>
+   
+   
+      <rect x="35.625"
+         y="525.5208333333333"
+         width="30.625"
+         height="269.4791666666667"
+         fill="#86af49"/>
+   <rect x="0" y="800" width="600" height="5" fill="black"/>
+      <rect x="96.875"
+         y="587.7083333333333"
+         width="30.625"
+         height="207.29166666666669"
+         fill="#86af49"/>
+   <rect x="0" y="800" width="600" height="5" fill="black"/>
+      <rect x="158.125"
+         y="774.2708333333334"
+         width="30.625"
+         height="20.729166666666668"
+         fill="#86af49"/>
+   <rect x="0" y="800" width="600" height="5" fill="black"/>
+   
+   
+			
+			Magirus
+			1984
+			Tir
+			436581
+			Diesel
+			7.0
+			29000
+			2018-09-12
+   
+   
+			
+			A4
+			2018
+			Kombi
+			1
+			Diesel
+			3.2
+			165914
+			2018-10-19
+   
+   16:54:53.002+02:00
+   
+      
+         1
+         Volkswagen
+         1931
+         3
+         194260
+      
+      
+         2
+         Audi
+         1909
+         2
+         211814
+      
+      
+         3
+         Fiat
+         1899
+         2
+         118800
+      
+      
+         4
+         Opel
+         1862
+         2
+         191800
+      
+      
+         5
+         BMW
+         1916
+         1
+         89900
+      
+      
+         6
+         Toyota
+         1937
+         1
+         52900
+      
+      
+         7
+         Mini
+         1959
+         1
+         30000
+      
+      
+         8
+         Jaguar
+         1922
+         1
+         230000
+      
+      
+         9
+         Porsche
+         1931
+         1
+         624865
+      
+      
+         10
+         Kia
+         1944
+         1
+         58000
+      
+      
+         11
+         Subaru
+         1953
+         1
+         24900
+      
+      
+         12
+         Mazda
+         1920
+         1
+         49500
+      
+      
+         13
+         Skoda
+         1895
+         1
+         22555
+      
+      
+         14
+         Alfa Romeo
+         1910
+         1
+         41800
+      
+      
+         15
+         Nissan
+         1933
+         1
+         91900
+      
+      
+         16
+         Jeep
+         1941
+         1
+         649000
+      
+      
+         17
+         Iveco
+         1975
+         1
+         29000
+      
+      
+         18
+         Man
+         1758
+         1
+         120500
+      
+      
+         19
+         Chevrolet
+         1911
+         1
+         49999
+      
+   
+<text x="450"
+         y="160"
+         fill="black"
+         style="font-family:Georgia; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
+   <text x="450"
+         y="500"
+         fill="black"
+         style="font-family:Georgia; font-weight: bold; font-size: 28px;">Ilość aut z danym silnikiem</text>
+   <text x="10"
+         y="700"
+         fill="black"
+         style="font-family:Georgia; font-weight: bold; font-size: 16px;">Najstarsze auto</text>
+   <text x="10"
+         y="720"
+         fill="black"
+         style="font-family:Georgia; font-weight: bold; font-size: 16px;">Najmłodsze auto</text>
+</svg>
