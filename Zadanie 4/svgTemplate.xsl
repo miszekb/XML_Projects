@@ -13,7 +13,6 @@
       doctype-public="-//W3C//DTD SVG 1.1//EN"
       doctype-system="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
       media-type="image/svg" />
-  
 
   <xsl:strip-space elements="list"/>
   
@@ -45,6 +44,16 @@
   <xsl:template match="/">
     <svg xmlns="http://www.w3.org/2000/svg"
 	 width="{$svg_width}" height="{$svg_height}" >
+       
+  <style id="style1">
+  .bar {
+  fill : #86af49;
+  }
+  .bar:hover {
+  cursor : pointer; 
+  fill : #505050;
+  }
+  </style>
       y_steps = <xsl:value-of select="$y_steps"/>
       <rect x="1" 
 	    y="1" 
@@ -52,6 +61,19 @@
 	    height="1000" 
 	    fill="#e3eaa7"/>
       <xsl:apply-templates/>
+    <text x="41" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">SUV</text>       
+    <text x="99" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Sedan</text>
+    <text x="158" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Coupe</text>
+    <text x="215" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Minivan</text>       
+    <text x="272" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Auta małe</text>
+    <text x="341" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Kombi</text>
+    <text x="398" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Kompakt</text>       
+    <text x="472" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Tir</text>
+
+    <text x="36" y="767" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Diesel</text>       
+    <text x="92" y="767" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Benzyna</text>
+    <text x="149" y="767" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Elektryczny</text>
+
     <text x="450" y="160" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
     <text x="450" y="500" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut z danym silnikiem</text>
     
@@ -73,29 +95,36 @@
 
   
   <xsl:template match="//Liczba_aut_danego_typu/*">
-    <rect x="{$padding + $x_width * (position() - 1) }"
+    <rect class="bar" x="{$padding + $x_width * (position() - 1) }"
 	  y="{($svg_height - $padding) - $y_steps * . - 600}" 
 	  width="{$x_width}" 
 	  height="{(. * $y_steps)}"
-	  fill="#86af49" />  
+	  fill="#86af49">
+      <animate attributeName="height"  from="0"  to="{(. * $y_steps)}" begin="0s" dur="4s" /> 
+    </rect>
     <rect x="0"
 	  y="400" 
 	  width="600" 
 	  height="5"
 	  fill="black"/>
+    <text  x="{$padding + $x_width * (position() - 1) + 12}" y="390" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;"><xsl:value-of select="."/></text>       
   </xsl:template>
 
   <xsl:template match="//Liczba_aut_rodzaj_silnika/*">
-    <rect x="{$padding + $x_width * (position() - 1) }"
+    <rect class="bar" x="{$padding + $x_width * (position() - 1) }"
 	  y="{($svg_height - $padding) - $y_stepsEngine * . - 250}" 
 	  width="{$x_width}" 
 	  height="{(. * $y_stepsEngine)}"
-	  fill="#86af49" />  
+	  fill="#86af49">
+       <animate attributeName="height"  from="0"  to="{(. * $y_stepsEngine)}" begin="0s" dur="4s" /> 
+        </rect>  
     <rect x="0"
 	  y="750" 
 	  width="600" 
 	  height="5"
 	  fill="black"/>
+    <text  x="{$padding + $x_width * (position() - 1) + 10}" y="740" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;"><xsl:value-of select="."/></text>       
+
   </xsl:template>
   
 </xsl:stylesheet>

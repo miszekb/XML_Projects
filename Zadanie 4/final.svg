@@ -5,6 +5,15 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1000"
      height="1000">
+   <style id="style1">
+  .bar {
+  fill : #86af49;
+  }
+  .bar:hover {
+  cursor : pointer; 
+  fill : #505050;
+  }
+  </style>
       y_steps = 62.1875<rect x="1" y="1" width="1000" height="1000" fill="#e3eaa7"/>
    
       
@@ -300,74 +309,195 @@
    2.881493E6
    3
    
-      <rect x="35.625"
+      <rect class="bar"
+         x="35.625"
          y="84.0625"
          width="30.625"
          height="310.9375"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="310.9375"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
-      <rect x="96.875"
+   <text x="47.625"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">5</text>
+      <rect class="bar"
+         x="96.875"
          y="146.25"
          width="30.625"
          height="248.75"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="248.75"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
-      <rect x="158.125"
+   <text x="108.875"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">4</text>
+      <rect class="bar"
+         x="158.125"
          y="332.8125"
          width="30.625"
          height="62.1875"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="62.1875"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
-      <rect x="219.375"
+   <text x="170.125"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">1</text>
+      <rect class="bar"
+         x="219.375"
          y="208.4375"
          width="30.625"
          height="186.5625"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="186.5625"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
-      <rect x="280.625"
+   <text x="231.375"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">3</text>
+      <rect class="bar"
+         x="280.625"
          y="270.625"
          width="30.625"
          height="124.375"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="124.375"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
-      <rect x="341.875"
+   <text x="292.625"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">2</text>
+      <rect class="bar"
+         x="341.875"
          y="270.625"
          width="30.625"
          height="124.375"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="124.375"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
-      <rect x="403.125"
+   <text x="353.875"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">2</text>
+      <rect class="bar"
+         x="403.125"
          y="270.625"
          width="30.625"
          height="124.375"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="124.375"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
-      <rect x="464.375"
+   <text x="415.125"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">2</text>
+      <rect class="bar"
+         x="464.375"
          y="270.625"
          width="30.625"
          height="124.375"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="124.375"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="400" width="600" height="5" fill="black"/>
+   <text x="476.375"
+         y="390"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">2</text>
    
    
-      <rect x="35.625"
+      <rect class="bar"
+         x="35.625"
          y="475.52083333333326"
          width="30.625"
          height="269.4791666666667"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="269.4791666666667"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="750" width="600" height="5" fill="black"/>
-      <rect x="96.875"
+   <text x="45.625"
+         y="740"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">13</text>
+      <rect class="bar"
+         x="96.875"
          y="537.7083333333333"
          width="30.625"
          height="207.29166666666669"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="207.29166666666669"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="750" width="600" height="5" fill="black"/>
-      <rect x="158.125"
+   <text x="106.875"
+         y="740"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">10</text>
+      <rect class="bar"
+         x="158.125"
          y="724.2708333333334"
          width="30.625"
          height="20.729166666666668"
-         fill="#86af49"/>
+         fill="#86af49">
+      <animate attributeName="height"
+               from="0"
+               to="20.729166666666668"
+               begin="0s"
+               dur="4s"/>
+   </rect>
    <rect x="0" y="750" width="600" height="5" fill="black"/>
+   <text x="168.125"
+         y="740"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">1</text>
    
    
 			
@@ -527,7 +657,51 @@
          49999
       
    
-<text x="450"
+<text x="41"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">SUV</text>
+   <text x="99"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Sedan</text>
+   <text x="158"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Coupe</text>
+   <text x="215"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Minivan</text>
+   <text x="272"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Auta małe</text>
+   <text x="341"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Kombi</text>
+   <text x="398"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Kompakt</text>
+   <text x="472"
+         y="417"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Tir</text>
+   <text x="36"
+         y="767"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Diesel</text>
+   <text x="92"
+         y="767"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Benzyna</text>
+   <text x="149"
+         y="767"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 12px;">Elektryczny</text>
+   <text x="450"
          y="160"
          fill="black"
          style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
