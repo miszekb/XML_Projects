@@ -5,6 +5,30 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1000"
      height="1000">
+   <script type="text/ecmascript">
+     
+        function rectClick(evt) {
+          var rectBar = evt.target;
+          var currentColor = rectBar.getAttribute("fill");
+          switch(currentColor) {
+            case "#e3eaa7":
+              rectBar.setAttribute("fill", "#8c7373");
+              break;
+            case "#8c7373":
+              rectBar.setAttribute("fill", "#f7db86");
+              break;
+            case "#f7db86":
+              rectBar.setAttribute("fill", "#b3ffff");
+              break;
+            case "#b3ffff":
+               rectBar.setAttribute("fill", "#e3eaa7");
+            default:
+              // code block
+          }
+        }
+       
+       
+  </script>
    <style id="style1">
   .bar {
   fill : #86af49;
@@ -14,7 +38,12 @@
   fill : #505050;
   }
   </style>
-      y_steps = 62.1875<rect x="1" y="1" width="1000" height="1000" fill="#e3eaa7"/>
+      y_steps = 62.1875<rect onclick="rectClick(evt)"
+         rx="1"
+         y="1"
+         width="1000"
+         height="1000"
+         fill="#e3eaa7"/>
    
       
          1
@@ -769,4 +798,15 @@
          y="975"
          fill="black"
          style="font-family:Calibri; font-weight: bold; font-size: 16px;">3</text>
+   <text x="500"
+         y="975"
+         fill="black"
+         style="font-family:Calibri; font-weight: bold; font-size: 16px;">Dane pochodzą z serwisu: </text>
+   <a target="_blank" xlink:href="http://otomoto.pl">
+      <image xlink:href="logo.PNG"
+             x="665"
+             y="950"
+             height="40"
+             width="120"/>
+   </a>
 </svg>

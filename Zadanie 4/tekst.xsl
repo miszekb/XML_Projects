@@ -35,7 +35,7 @@
         <xsl:text>&#xA;</xsl:text>
         <xsl:text>Najmłodsze auto: </xsl:text><xsl:value-of select="//Liczba_wszystkich_aut" />
         <xsl:text>&#xA;&#xA;</xsl:text>
-        <xsl:text>Daata wygenerowania raportu: </xsl:text><xsl:value-of select="//Liczba_wszystkich_aut" />
+        <xsl:text>Data wygenerowania raportu: </xsl:text><xsl:value-of select="//Liczba_wszystkich_aut" />
         <xsl:text>&#xA;&#xA;</xsl:text>
 
         <xsl:text>Ilość aut danego typu &#xA;</xsl:text>

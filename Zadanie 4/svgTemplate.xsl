@@ -44,7 +44,30 @@
   <xsl:template match="/">
     <svg xmlns="http://www.w3.org/2000/svg"
 	 width="{$svg_width}" height="{$svg_height}" >
+  <script type="text/ecmascript">
+     <![CDATA[
+        function rectClick(evt) {
+          var rectBar = evt.target;
+          var currentColor = rectBar.getAttribute("fill");
+          switch(currentColor) {
+            case "#e3eaa7":
+              rectBar.setAttribute("fill", "#8c7373");
+              break;
+            case "#8c7373":
+              rectBar.setAttribute("fill", "#f7db86");
+              break;
+            case "#f7db86":
+              rectBar.setAttribute("fill", "#b3ffff");
+              break;
+            case "#b3ffff":
+               rectBar.setAttribute("fill", "#e3eaa7");
+            default:
+              // code block
+          }
+        }
        
+      ]]> 
+  </script>
   <style id="style1">
   .bar {
   fill : #86af49;
@@ -55,7 +78,7 @@
   }
   </style>
       y_steps = <xsl:value-of select="$y_steps"/>
-      <rect x="1" 
+      <rect onclick="rectClick(evt)" rx="1" 
 	    y="1" 
 	    width="1000" 
 	    height="1000" 
@@ -89,12 +112,16 @@
     <text x="200" y="950" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 16px;"><xsl:value-of select="//Suma_cen_wszystkich_aut"/> zł</text>
     <text x="200" y="975" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 16px;"><xsl:value-of select="//Liczba_volkswagenów"/></text>
 
+    <text x="500" y="975" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 16px;">Dane pochodzą z serwisu: </text>
+    <a target="_blank" xlink:href="http://otomoto.pl"><image xlink:href="logo.PNG" x="665" y="950" height="40" width="120"/></a>
+
     </svg>
   </xsl:template>
   
 
   
   <xsl:template match="//Liczba_aut_danego_typu/*">
+  
     <rect class="bar" x="{$padding + $x_width * (position() - 1) }"
 	  y="{($svg_height - $padding) - $y_steps * . - 600}" 
 	  width="{$x_width}" 
@@ -102,7 +129,8 @@
 	  fill="#86af49">
       <animate attributeName="height"  from="0"  to="{(. * $y_steps)}" begin="0s" dur="4s" /> 
     </rect>
-    <rect x="0"
+    <rect
+    x="0"
 	  y="400" 
 	  width="600" 
 	  height="5"
@@ -111,6 +139,7 @@
   </xsl:template>
 
   <xsl:template match="//Liczba_aut_rodzaj_silnika/*">
+  
     <rect class="bar" x="{$padding + $x_width * (position() - 1) }"
 	  y="{($svg_height - $padding) - $y_stepsEngine * . - 250}" 
 	  width="{$x_width}" 
