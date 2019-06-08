@@ -9,33 +9,33 @@
     <xsl:for-each select="//Auta_posortowane/samochód">
         <xsl:value-of select="LP_auta"/>
             <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="5 - string-length(LP_auta)"/>
+                <xsl:with-param name="dlugosc" select="5 - string-length(LP_auta)"/>
             </xsl:call-template>
         <xsl:value-of select="Marka_nazwa"/>
             <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="12 - string-length(Marka_nazwa)"/>
+                <xsl:with-param name="dlugosc" select="12 - string-length(Marka_nazwa)"/>
             </xsl:call-template>
         <xsl:value-of select="Model"/>
             <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="20 - string-length(Model)"/>
+                <xsl:with-param name="dlugosc" select="20 - string-length(Model)"/>
             </xsl:call-template>
         <xsl:value-of select="Rocznik"/>
          <xsl:text>&#x20;&#x20;</xsl:text>
         <xsl:value-of select="Typ"/>
          <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="10 - string-length(Typ)"/>
+                <xsl:with-param name="dlugosc" select="10 - string-length(Typ)"/>
             </xsl:call-template>
         <xsl:value-of select="Przebieg"/>
          <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="10 - string-length(Przebieg)"/>
+                <xsl:with-param name="dlugosc" select="10 - string-length(Przebieg)"/>
             </xsl:call-template>
         <xsl:value-of select="Rodzaj_silnika"/>
          <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="15 - string-length(Rodzaj_silnika)"/>
+                <xsl:with-param name="dlugosc" select="15 - string-length(Rodzaj_silnika)"/>
             </xsl:call-template>
         <xsl:value-of select="Pojemność"/>
         <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="8 - string-length(Pojemność)"/>
+                <xsl:with-param name="dlugosc" select="8 - string-length(Pojemność)"/>
             </xsl:call-template>
         <xsl:value-of select="Cena"/> zł
         </xsl:for-each>
@@ -76,15 +76,15 @@
         <xsl:for-each select="//Marki_posortowane/marka">
             <xsl:value-of select="Lp_marki"/>
             <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="5 - string-length(Lp_marki)"/>
+                <xsl:with-param name="dlugosc" select="5 - string-length(Lp_marki)"/>
             </xsl:call-template>
             <xsl:value-of select="Koncern"/>
             <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="15 - string-length(Koncern)"/>
+                <xsl:with-param name="dlugosc" select="15 - string-length(Koncern)"/>
             </xsl:call-template>
             <xsl:value-of select="Liczba_aut_marki"/>
             <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="12 - string-length(Liczba_aut_marki)"/>
+                <xsl:with-param name="dlugosc" select="12 - string-length(Liczba_aut_marki)"/>
             </xsl:call-template>
             <xsl:value-of select="Suma_cen_aut"/>
             <xsl:text>&#xA;</xsl:text>
@@ -92,12 +92,12 @@
     </xsl:template>
 
     <xsl:template name="odstep">
-    <xsl:param name="length"/>
+    <xsl:param name="dlugosc"/>
     <xsl:param name="string" select="' '"/>
     <xsl:value-of select="$string"/>
-        <xsl:if test="$length > 1">
+        <xsl:if test="$dlugosc > 1">
             <xsl:call-template name="odstep">
-                <xsl:with-param name="length" select="$length - 1"/>
+                <xsl:with-param name="dlugosc" select="$dlugosc - 1"/>
                 <xsl:with-param name="string" select="$string"/>
             </xsl:call-template>
         </xsl:if>
