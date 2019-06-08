@@ -65,6 +65,14 @@
               // code block
           }
         }
+        function textHover(evt) {
+          var text = evt.target;
+          var currentColor = text.getAttribute("fill");
+          if (currentColor == "black")
+            text.setAttribute("fill", "red")
+          else
+            text.setAttribute("fill", "black")
+        }
        
       ]]> 
   </script>
@@ -97,8 +105,8 @@
     <text x="92" y="767" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Benzyna</text>
     <text x="149" y="767" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Elektryczny</text>
 
-    <text x="450" y="160" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
-    <text x="450" y="500" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut z danym silnikiem</text>
+    <text onmouseover="textHover(evt)"  x="450" y="160" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
+    <text onmouseover="textHover(evt)" x="450" y="500" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut z danym silnikiem</text>
     
     <text x="10" y="850" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 16px;">Ilość wszystkich aut:</text>       
     <text x="10" y="875" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 16px;">Najstarsze auto:</text>

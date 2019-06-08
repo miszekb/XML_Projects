@@ -26,6 +26,14 @@
               // code block
           }
         }
+        function textHover(evt) {
+          var text = evt.target;
+          var currentColor = text.getAttribute("fill");
+          if (currentColor == "black")
+            text.setAttribute("fill", "red")
+          else
+            text.setAttribute("fill", "black")
+        }
        
        
   </script>
@@ -730,11 +738,13 @@
          y="767"
          fill="black"
          style="font-family:Calibri; font-weight: bold; font-size: 12px;">Elektryczny</text>
-   <text x="450"
+   <text onmouseover="textHover(evt)"
+         x="450"
          y="160"
          fill="black"
          style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut danego typu</text>
-   <text x="450"
+   <text onmouseover="textHover(evt)"
+         x="450"
          y="500"
          fill="black"
          style="font-family:Calibri; font-weight: bold; font-size: 28px;">Ilość aut z danym silnikiem</text>
