@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet version="1.0" 
 	xmlns:fo="http://www.w3.org/1999/XSL/Format" 
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:output method="xml" version="1.0" indent="yes"/>
-	<xsl:template match="/">
-		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+	<xsl:output method="xml" version="1.0" indent="yes" encoding="UTF-8"/> 
+	<xsl:template match="/"> 
+		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"> 
 			<fo:layout-master-set>
-				<fo:simple-page-master page-height="297mm" page-width="210mm" margin="5mm 15mm 5mm 15mm" master-name="PageMaster">
-					<fo:region-body margin="20mm 0mm 20mm 0mm"/>
+				<fo:simple-page-master page-height="297mm" page-width="210mm" margin="5mm 15mm 5mm 15mm" master-name="moja-strona">
+					<fo:region-body margin="20mm 0mm 20mm 0mm"/> 
 				</fo:simple-page-master>
 			</fo:layout-master-set>
-			<fo:page-sequence master-reference="PageMaster">
-				<fo:flow flow-name="xsl-region-body">
+			<fo:page-sequence master-reference="moja-strona"> 
+				<fo:flow flow-name="xsl-region-body"> 
 					<fo:block text-align="left" font-size="10pt" margin-bottom="40px">
 						Przeglądasz obecnie bazę samochodów wraz z ich podstawowymi parametrami
 						sporządzoną w ramach przedmiotu "Programowanie Komunikacji Człowiek-Komputer".
 						Dane pochodzą z serwisu z ogłoszeniami otomoto.pl
-					</fo:block>
+					</fo:block> 
 					<fo:block text-align="center" font-size="13pt" margin-top="20px" font-weight="bold">
 						Auta posortowane według daty ogłoszenia (od najwcześniejszego)
 					</fo:block>
-					<fo:table break-after="page" table-layout="fixed" font-size="10pt" border-width="thin" background-color= "#fff5cc">
-						<fo:table-column column-width="22px"/>
+					<fo:table break-after="page" table-layout="fixed" font-size="10pt" border-width="thin" background-color= "#fff5cc"> 
+						<fo:table-column column-width="22px"/> 
 						<fo:table-column column-width="60px"/>
 						<fo:table-column column-width="auto"/>
 						<fo:table-column column-width="auto"/>
@@ -33,7 +33,7 @@
 						<fo:table-column column-width="auto"/>
 						<fo:table-header text-align="center" background-color= "#ffd11a">
 							<fo:table-row>
-								<fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+								<fo:table-cell padding="1mm" border-width="thin" border-style="solid"> 
 									<fo:block font-weight="bold">Lp.</fo:block>
 								</fo:table-cell>
 								<fo:table-cell padding="1mm" border-width="thin" border-style="solid">

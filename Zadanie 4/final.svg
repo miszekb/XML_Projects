@@ -5,49 +5,49 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1000"
      height="1000">
-   <script type="text/ecmascript">
-     
-        function rectClick(evt) {
-          var rectBar = evt.target;
-          var currentColor = rectBar.getAttribute("fill");
-          switch(currentColor) {
-            case "#e3eaa7":
-              rectBar.setAttribute("fill", "#8c7373");
-              break;
-            case "#8c7373":
-              rectBar.setAttribute("fill", "#f7db86");
-              break;
-            case "#f7db86":
-              rectBar.setAttribute("fill", "#b3ffff");
-              break;
-            case "#b3ffff":
-               rectBar.setAttribute("fill", "#e3eaa7");
-            default:
-              // code block
-          }
-        }
-        function textHover(evt) {
-          var text = evt.target;
-          var currentColor = text.getAttribute("fill");
-          if (currentColor == "black")
-            text.setAttribute("fill", "red")
-          else
-            text.setAttribute("fill", "black")
-        }
-       
-       
-  </script>
-   <style id="style1">
-  .bar {
-  fill : #86af49;
-  }
-  .bar:hover {
-  cursor : pointer; 
-  fill : #505050;
-  }
-  </style>
-      y_steps = 62.1875<rect onclick="rectClick(evt)"
-         rx="1"
+   <script type="text/ecmascript">  
+        
+            function rectClick(evt) {
+              var rectBar = evt.target;
+              var currentColor = rectBar.getAttribute("fill");
+              switch(currentColor) {
+                case "#e3eaa7":
+                  rectBar.setAttribute("fill", "#8c7373");
+                  break;
+                case "#8c7373":
+                  rectBar.setAttribute("fill", "#f7db86");
+                  break;
+                case "#f7db86":
+                  rectBar.setAttribute("fill", "#b3ffff");
+                  break;
+                case "#b3ffff":
+                  rectBar.setAttribute("fill", "#e3eaa7");
+                default:
+                  // code block
+              }
+            }
+            function textHover(evt) {
+              var text = evt.target;
+              var currentColor = text.getAttribute("fill");
+              if (currentColor == "black")
+                text.setAttribute("fill", "red")
+              else
+                text.setAttribute("fill", "black")
+            }
+          
+           
+      </script>
+   <style id="style1">  
+      .bar {
+      fill : #86af49;
+      }
+      .bar:hover {
+      cursor : pointer; 
+      fill : #505050;
+      }
+      </style>
+          y_steps = 62.1875<rect onclick="rectClick(evt)"
+         x="1"
          y="1"
          width="1000"
          height="1000"

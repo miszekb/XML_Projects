@@ -4,7 +4,6 @@
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 		xmlns="http://www.w3.org/2000/svg"
-		>
   
   <xsl:output
       method="xml"
@@ -12,36 +11,23 @@
       standalone="no"
       doctype-public="-//W3C//DTD SVG 1.1//EN"
       doctype-system="http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
-      media-type="image/svg" />
-
-  <xsl:strip-space elements="list"/>
+      media-type="image/svg" /> 
   
-  <xsl:variable name="svg_width" select="1000"/>
+  <xsl:variable name="svg_width" select="1000"/> 
   <xsl:variable name="svg_height" select="1000"/>
   <xsl:variable name="padding" select="5"/>
 
   <xsl:variable name ="y_steps">
-    <xsl:for-each select="//Liczba_aut_danego_typu/*">
-      <xsl:sort select="." data-type="number" order="descending"/>
-      <xsl:if test="position() = 1">
-	<xsl:value-of select="($svg_height - $padding) div 16"/>
-      </xsl:if>
-    </xsl:for-each>
+	  <xsl:value-of select="($svg_height - $padding) div 16"/>
   </xsl:variable>
 
   <xsl:variable name ="y_stepsEngine">
-    <xsl:for-each select="//Liczba_aut_rodzaj_silnika/*">
-      <xsl:sort select="." data-type="number" order="descending"/>
-      <xsl:if test="position() = 1">
-	<xsl:value-of select="($svg_height - $padding) div 48"/>
-      </xsl:if>
-    </xsl:for-each>
+	  <xsl:value-of select="($svg_height - $padding) div 48"/>
   </xsl:variable>
 
-  <xsl:variable name="x_width"
-		select="($svg_width - 4*$padding) div (4*count(//Liczba_aut_danego_typu/*))"/>
-
-  <xsl:template match="/">
+  <xsl:variable name="x_width" select="($svg_width - 4*$padding) div (4*count(//Liczba_aut_danego_typu/*))"/>
+ 
+  <xsl:template match="/">  
     <svg xmlns="http://www.w3.org/2000/svg" width="{$svg_width}" height="{$svg_height}" >
       <script type="text/ecmascript">
         <![CDATA[
@@ -75,7 +61,7 @@
           
           ]]> 
       </script>
-      <style id="style1">
+      <style id="style1">  
       .bar {
       fill : #86af49;
       }
@@ -85,12 +71,12 @@
       }
       </style>
           y_steps = <xsl:value-of select="$y_steps"/>
-          <rect onclick="rectClick(evt)" rx="1" 
+          <rect onclick="rectClick(evt)" x="1" 
           y="1" 
           width="1000" 
           height="1000" 
-          fill="#e3eaa7"/>
-          <xsl:apply-templates/>
+          fill="#e3eaa7"/>  
+          <xsl:apply-templates/>  
         <text x="41" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">SUV</text>       
         <text x="99" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Sedan</text>
         <text x="158" y="417" fill="black" style="font-family:Calibri; font-weight: bold; font-size: 12px;">Coupe</text>
@@ -124,10 +110,7 @@
     </svg>
   </xsl:template>
   
-
-  
   <xsl:template match="//Liczba_aut_danego_typu/*">
-  
     <rect class="bar" x="{$padding + $x_width * (position() - 1) }"
 	  y="{($svg_height - $padding) - $y_steps * . - 600}" 
 	  width="{$x_width}" 

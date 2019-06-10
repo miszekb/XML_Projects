@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
     <xsl:output method="text"/>
-    <!--<xsl:result-document href="tekst.txt" method=text />-->
-    <xsl:template match="/">
-    <xsl:text>Auta posortowane</xsl:text>
-    <xsl:text>&#xA;&#x9;</xsl:text>
+   
+    <xsl:template match="/"> 
+    <xsl:text>Auta posortowane</xsl:text> 
+    <xsl:text>&#xA;&#x9;</xsl:text> 
     
-    <xsl:for-each select="//Auta_posortowane/samochód">
-        <xsl:value-of select="LP_auta"/>
-            <xsl:call-template name="odstep">
-                <xsl:with-param name="dlugosc" select="5 - string-length(LP_auta)"/>
+    <xsl:for-each select="//Auta_posortowane/samochód"> 
+        <xsl:value-of select="LP_auta"/> 
+            <xsl:call-template name="odstep"> 
+                <xsl:with-param name="dlugosc" select="5 - string-length(LP_auta)"/> 
             </xsl:call-template>
         <xsl:value-of select="Marka_nazwa"/>
             <xsl:call-template name="odstep">
@@ -20,7 +20,7 @@
                 <xsl:with-param name="dlugosc" select="20 - string-length(Model)"/>
             </xsl:call-template>
         <xsl:value-of select="Rocznik"/>
-         <xsl:text>&#x20;&#x20;</xsl:text>
+         <xsl:text>&#x20;&#x20;</xsl:text> 
         <xsl:value-of select="Typ"/>
          <xsl:call-template name="odstep">
                 <xsl:with-param name="dlugosc" select="10 - string-length(Typ)"/>
@@ -41,7 +41,7 @@
         </xsl:for-each>
         <xsl:text>===============================================================================================&#xA;</xsl:text>
         <xsl:text>&#xA;</xsl:text>
-        <xsl:text>Ilość wszystkich aut: </xsl:text><xsl:value-of select="//Liczba_wszystkich_aut" />
+        <xsl:text>Ilość wszystkich aut: </xsl:text><xsl:value-of select="//Liczba_wszystkich_aut" /> 
         <xsl:text>&#xA;</xsl:text>
         <xsl:text>Suma cen wszystkich aut: </xsl:text><xsl:value-of select="//Suma_cen_wszystkich_aut"/>
         <xsl:text>&#xA;</xsl:text>
@@ -92,13 +92,11 @@
     </xsl:template>
 
     <xsl:template name="odstep">
-    <xsl:param name="dlugosc"/>
-    <xsl:param name="string" select="' '"/>
-    <xsl:value-of select="$string"/>
-        <xsl:if test="$dlugosc > 1">
+    <xsl:param name="dlugosc"/> 
+    <xsl:value-of select="' '"/>  
+        <xsl:if test="$dlugosc > 1"> 
             <xsl:call-template name="odstep">
-                <xsl:with-param name="dlugosc" select="$dlugosc - 1"/>
-                <xsl:with-param name="string" select="$string"/>
+                <xsl:with-param name="dlugosc" select="$dlugosc - 1"/> 
             </xsl:call-template>
         </xsl:if>
     </xsl:template>

@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> <!-- deklaracja xml w wersji 1.0 oraz kodowaniu UTF-8 -->
 <xsl:stylesheet version="2.0" 
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> <!-- deklaracja arkusza stylów w wersji 2.0 oraz przestrzenią nazw-->
 
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/><!-- określenie dokumentu wyjściowego w fomie xml w wersji 1.0 kodowaniem UTF-8 oraz wcięciami -->
 
-  <xsl:template match="/">
+  <xsl:template match="/"> <!-- deklaracja szablonu powiązanego z elementem głównym dokumentu-->
     <document>
       <Auta_posortowane>
         <xsl:for-each select="//samochód">
           <xsl:sort select="data_umieszczenia_ogłoszenia"/>
           <samochód>
             <LP_auta>
-              <xsl:value-of select="position()"/>
+              <xsl:value-of select="position()"/> <!-- pobranie numeru aktualnej iteracji pętli -->
             </LP_auta>
             <Marka_nazwa>
-              <xsl:value-of select="//koncern[../@markaID = current()/marka_auta/@markaID]"/>
+              <xsl:value-of select="//koncern[../@markaID = current()/marka_auta/@markaID]"/> <!-- pobranie nazwy koncernu którego atrybut ID pokrywa się ID marki aktualnie rozważanego elementu w pętli -->
             </Marka_nazwa>
             <Model>
               <xsl:value-of select="model"/>
@@ -46,13 +46,13 @@
       </Auta_posortowane>
 
       <Liczba_wszystkich_aut>
-        <xsl:value-of select="count(//samochód)"/>
+        <xsl:value-of select="count(//samochód)"/> <!-- obliczenie ilości wystąpień elementu samochód w dokumencie-->
       </Liczba_wszystkich_aut>
       <Suma_cen_wszystkich_aut>
-        <xsl:value-of select="sum(//cena) "/>
+        <xsl:value-of select="sum(//cena) "/> <!-- zsumowanie wartości wszystkich elementów cena w dokumencie-->
       </Suma_cen_wszystkich_aut>
       <Liczba_volkswagenów>
-        <xsl:value-of select="count(//marka_auta[@markaID = 'M1'])"/>
+        <xsl:value-of select="count(//marka_auta[@markaID = 'M1'])"/> <!-- obliczenie ilości wszystkich aut których markaID wynosi M1-->
       </Liczba_volkswagenów>
 
       <Liczba_aut_danego_typu>
@@ -95,15 +95,15 @@
       </Liczba_aut_rodzaj_silnika>
 
       <Najstarsze_auto>
-        <xsl:variable name="OldestCar">
+        <xsl:variable name="OldestCar"> <!-- definicja zmiennek -->
           <xsl:for-each select="dokument/baza/samochód">
-            <xsl:sort data-type="number" order="ascending" select="rocznik"/>
-            <xsl:if test="position() = 1">
-              <xsl:value-of select="."/>
+            <xsl:sort data-type="number" order="ascending" select="rocznik"/> <!-- sortowanie roczników rosnąco według typu liczbowego -->
+            <xsl:if test="position() = 1"> <!-- jeśli to pierwszy element w pętli.. -->
+              <xsl:value-of select="."/><!-- ..to pobieramy jego wartość -->
             </xsl:if>
           </xsl:for-each>
         </xsl:variable>
-        <xsl:value-of select="$OldestCar"/>
+        <xsl:value-of select="$OldestCar"/> <!-- pobranie wartości ze zmiennej Oldestcar -->
       </Najstarsze_auto>
 
       <Najmłodsze_auto>
@@ -119,7 +119,7 @@
       </Najmłodsze_auto>
 
       <Data_wygenerowania_raportu>
-        <xsl:value-of select="current-date()"/>
+        <xsl:value-of select="current-date()"/> <!-- pobranie aktualnej daty systemowej -->
       </Data_wygenerowania_raportu>
 
       <Marki_posortowane>
