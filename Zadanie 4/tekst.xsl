@@ -5,7 +5,6 @@
     <xsl:template match="/"> 
     <xsl:text>Auta posortowane</xsl:text> 
     <xsl:text>&#xA;&#x9;</xsl:text> 
-    
     <xsl:for-each select="//Auta_posortowane/samochód"> 
         <xsl:value-of select="LP_auta"/> 
             <xsl:call-template name="odstep"> 
