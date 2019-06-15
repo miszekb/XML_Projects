@@ -1,7 +1,12 @@
 import java.util.Date;
 
+import STRUCTURE.*;
+import GUI.*;
+
 public class MainClass {
     public static void main(String[] args){
+
+    MainWindow mainWindow = new MainWindow();
 
         Dokument dok = new Dokument();
 
@@ -29,6 +34,7 @@ public class MainClass {
         XMLSerializer xmlSerializer = new XMLSerializer();
         //xmlSerializer.serializeAll(dok);
         System.out.println(xmlSerializer.deserializeAll().getAutorzy().toString());
-
+        XSLTransformer xslTransformer = new XSLTransformer();
+        xslTransformer.transform();
     }
 }

@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package STRUCTURE;
+
 import javax.xml.bind.annotation.*;
 
 @XmlRootElement
