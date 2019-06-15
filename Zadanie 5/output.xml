@@ -5,27 +5,27 @@
         <autor grupaTGSK="2" github="MickAlmighty">Michal Mamona</autor>
     </autorzy>
     <zmiany>
-        <zmiana>2019-06-15T16:39:50.342+02:00</zmiana>
-        <zmiana>2019-06-15T16:39:50.342+02:00</zmiana>
-        <zmiana>2019-06-15T16:39:50.342+02:00</zmiana>
+        <zmiana>2019-06-15T17:12:51.083+02:00</zmiana>
+        <zmiana>2019-06-15T17:12:51.083+02:00</zmiana>
+        <zmiana>2019-06-15T17:12:51.083+02:00</zmiana>
     </zmiany>
     <baza>
         <samochód ID="auto1">
-            <marka_auta>
-                <ID>M1</ID>
-                <koncern>Volkswagen</koncern>
-                <rokZalozenia>1901</rokZalozenia>
-            </marka_auta>
-            <model>Sharan</model>
+            <marka_auta markaID="M1"/>
+            <model kraj="Niemcy">Sharan</model>
             <rocznik>2008</rocznik>
             <typ>Minivan</typ>
             <przebieg>248000</przebieg>
             <rodzaj_silnika>Diesel</rodzaj_silnika>
             <pojemność_silnika>1.8</pojemność_silnika>
-            <cena>26700</cena>
-            <waluta>PLN</waluta>
-            <data>2019-06-15T16:39:50.343+02:00</data>
+            <cena waluta="PLN">26700</cena>
+            <data_umieszczenia_ogłoszenia>2019-06-15T17:12:51.085+02:00</data_umieszczenia_ogłoszenia>
         </samochód>
     </baza>
-    <marki/>
+    <marki>
+        <marka markaID="M1">
+            <koncern>Volkswagen</koncern>
+            <rok_założenia>1908</rok_założenia>
+        </marka>
+    </marki>
 </dokument>
