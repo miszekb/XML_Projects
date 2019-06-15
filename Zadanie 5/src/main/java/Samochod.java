@@ -1,19 +1,28 @@
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import java.util.Date;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Samochod {
-
-    private String ID;
-    private Marka marka;
+    @XmlAttribute(name = "ID")
+    private String ID; //attribute
+    @XmlElement(name = "marka_auta")
+    private Marka marka; //empty element with attribute
     private String model;
-    private short rocznik;
+    private int rocznik;
     private String typ;
     private int przebieg;
+    @XmlElement(name = "rodzaj_silnika")
     private String rodzajSilnika;
+    @XmlElement(name = "pojemność_silnika")
     private float pojemnoscSilnika;
     private int cena;
+    private String waluta; //attribute
     private Date data;
 
-    public Samochod(String ID, Marka marka, String model, short rocznik, String typ, int przebieg, String rodzajSilnika, float pojemnoscSilnika, int cena, Date data) {
+    public Samochod(String ID, Marka marka, String model, int rocznik, String typ, int przebieg, String rodzajSilnika, float pojemnoscSilnika, int cena, String waluta, Date data) {
         this.ID = ID;
         this.marka = marka;
         this.model = model;
@@ -22,6 +31,7 @@ public class Samochod {
         this.przebieg = przebieg;
         this.rodzajSilnika = rodzajSilnika;
         this.pojemnoscSilnika = pojemnoscSilnika;
+        this.waluta = waluta;
         this.cena = cena;
         this.data = data;
     }
@@ -50,11 +60,11 @@ public class Samochod {
         this.model = model;
     }
 
-    public short getRocznik() {
+    public int getRocznik() {
         return rocznik;
     }
 
-    public void setRocznik(short rocznik) {
+    public void setRocznik(int rocznik) {
         this.rocznik = rocznik;
     }
 
@@ -88,6 +98,14 @@ public class Samochod {
 
     public void setPojemnoscSilnika(float pojemnoscSilnika) {
         this.pojemnoscSilnika = pojemnoscSilnika;
+    }
+
+    public String getWaluta() {
+        return waluta;
+    }
+
+    public void setWaluta(String waluta) {
+        this.waluta = waluta;
     }
 
     public int getCena() {

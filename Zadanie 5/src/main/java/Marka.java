@@ -1,19 +1,21 @@
 public class Marka {
 
-    private String ID;
+    private String markaID;
     private String koncern;
+    private int rokZalozenia;
 
-    public Marka(String ID, String koncern, short rokZalozenia) {
-        this.ID = ID;
+
+    public Marka(String ID, String koncern, int rokZalozenia) {
+        this.markaID = ID;
         this.koncern = koncern;
         this.rokZalozenia = rokZalozenia;
     }
     public String getID() {
-        return ID;
+        return markaID;
     }
 
     public void setID(String ID) {
-        this.ID = ID;
+        this.markaID = ID;
     }
 
     public String getKoncern() {
@@ -24,15 +26,14 @@ public class Marka {
         this.koncern = koncern;
     }
 
-    public short getRokZalozenia() {
+    public int getRokZalozenia() {
         return rokZalozenia;
     }
 
-    public void setRokZalozenia(short rokZalozenia) {
+    public void setRokZalozenia(int rokZalozenia) {
         this.rokZalozenia = rokZalozenia;
     }
 
-    private short rokZalozenia;
 
 
 }

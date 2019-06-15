@@ -1,13 +1,26 @@
+import com.sun.xml.txw2.annotation.XmlElement;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlValue;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Autor {
+    @XmlValue
     private String autorDane;
-    private short grupa;
+    @XmlAttribute
+    private int grupa_TGSK;
+    @XmlAttribute
     private String github;
 
-    public Autor(String autorDane, short grupa, String github) {
+    public Autor(String autorDane, int grupa, String github) {
         this.autorDane = autorDane;
-        this.grupa = grupa;
+        this.grupa_TGSK = grupa;
         this.github = github;
     }
+
+    public Autor() {}
 
     public String getAutorDane() {
         return autorDane;
@@ -17,12 +30,12 @@ public class Autor {
         this.autorDane = autorDane;
     }
 
-    public short getGrupa() {
-        return grupa;
+    public int getGrupa() {
+        return grupa_TGSK;
     }
 
-    public void setGrupa(short grupa) {
-        this.grupa = grupa;
+    public void setGrupa(int grupa) {
+        this.grupa_TGSK = grupa;
     }
 
     public String getGithub() {

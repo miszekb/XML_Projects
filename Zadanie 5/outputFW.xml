@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dokument>
+    <autorzy>
+        <autor grupaTGSK="1" github="miszekb">Michal Bialecki</autor>
+        <autor grupaTGSK="2" github="MickAlmighty">Michal Mamona</autor>
+    </autorzy>
+    <zmiany>
+        <zmiana>2019-06-15T16:39:50.342+02:00</zmiana>
+        <zmiana>2019-06-15T16:39:50.342+02:00</zmiana>
+        <zmiana>2019-06-15T16:39:50.342+02:00</zmiana>
+    </zmiany>
+    <baza>
+        <samochód ID="auto1">
+            <marka_auta>
+                <ID>M1</ID>
+                <koncern>Volkswagen</koncern>
+                <rokZalozenia>1901</rokZalozenia>
+            </marka_auta>
+            <model>Sharan</model>
+            <rocznik>2008</rocznik>
+            <typ>Minivan</typ>
+            <przebieg>248000</przebieg>
+            <rodzaj_silnika>Diesel</rodzaj_silnika>
+            <pojemność_silnika>1.8</pojemność_silnika>
+            <cena>26700</cena>
+            <waluta>PLN</waluta>
+            <data>2019-06-15T16:39:50.343+02:00</data>
+        </samochód>
+    </baza>
+    <marki/>
+</dokument>
