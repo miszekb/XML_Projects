@@ -10,6 +10,8 @@ public class Model {
     @XmlAttribute
     private String kraj;
 
+    public Model() {}
+
     public Model(String model, String kraj) {
         this.model = model;
         this.kraj = kraj;

@@ -12,4 +12,14 @@ public class Autorzy {
         autorzy.add(autor);
     }
 
+    @Override
+    public String toString() {
+        String temp = "";
+        for (Autor autor : autorzy) {
+            temp += autor.getAutorDane() + "\n";
+        }
+
+        return temp;
+    }
+
 }

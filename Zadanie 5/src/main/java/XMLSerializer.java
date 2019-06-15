@@ -1,15 +1,14 @@
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.OutputStreamWriter;
+import javax.xml.bind.Unmarshaller;
+import java.io.*;
 
 public class XMLSerializer {
 
     public void serializeAll(Dokument dokument)
     {
         try (FileWriter fw = new FileWriter("outputFW.xml");
-            OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("output.xml"), "UTF-8");)
+             OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("output.xml"), "UTF-8");)
         {
             JAXBContext ctx = JAXBContext.newInstance(Dokument.class);
             Marshaller mrs = ctx.createMarshaller();
@@ -20,8 +19,27 @@ public class XMLSerializer {
             mrs.marshal(dokument, System.out);
         }
         catch (Exception exception) {
-        System.out.println(exception.getCause());
+            System.out.println(exception.getCause());
+        }
     }
+
+    public Dokument deserializeAll()
+    {
+        try (FileReader fr = new FileReader("output.xml");
+             InputStreamReader osw = new InputStreamReader(new FileInputStream("car_database.xml"), "UTF-8");)
+        {
+            JAXBContext ctx = JAXBContext.newInstance(Dokument.class);
+            Unmarshaller unmrs = ctx.createUnmarshaller();
+
+            Object dok = unmrs.unmarshal(osw);
+            return (Dokument)dok;
+
+        }
+        catch (Exception exception) {
+            System.out.println(exception.getCause());
+        }
+
+        return null;
 
     }
 }

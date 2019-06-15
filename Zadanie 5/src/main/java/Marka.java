@@ -13,6 +13,8 @@ public class Marka {
     @XmlElement(name = "rok_założenia")
     private int rokZalozenia;
 
+    public Marka() {}
+
     public Marka(String ID, String koncern, int rokZalozenia) {
         this.markaID = ID;
         this.koncern = koncern;

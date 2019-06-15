@@ -13,6 +13,8 @@ public class Cena {
     @XmlValue
     private int cena;
 
+    public Cena() {}
+
     public Cena(int cena, String waluta) {
         this.cena = cena;
         this.waluta = waluta;

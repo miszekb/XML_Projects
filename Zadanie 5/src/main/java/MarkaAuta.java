@@ -8,6 +8,8 @@ public class MarkaAuta {
     @XmlAttribute(name = "markaID")
     private String ID;
 
+    public MarkaAuta() {}
+
     public MarkaAuta(String ID) {
         this.ID = ID;
     }

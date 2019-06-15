@@ -22,6 +22,8 @@ public class Samochod {
     @XmlElement(name = "data_umieszczenia_ogłoszenia")
     private Date data;
 
+    public Samochod() {}
+
     public Samochod(String ID, MarkaAuta marka, Model model, int rocznik, String typ, int przebieg, String rodzajSilnika, float pojemnoscSilnika, Cena cena, Date data) {
         this.ID = ID;
         this.marka = marka;

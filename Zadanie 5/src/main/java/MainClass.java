@@ -27,7 +27,8 @@ public class MainClass {
         dok.addToMarki(marka);
         dok.addToBaza(samochod1);
         XMLSerializer xmlSerializer = new XMLSerializer();
-        xmlSerializer.serializeAll(dok);
+        //xmlSerializer.serializeAll(dok);
+        System.out.println(xmlSerializer.deserializeAll().getAutorzy().toString());
 
     }
 }
