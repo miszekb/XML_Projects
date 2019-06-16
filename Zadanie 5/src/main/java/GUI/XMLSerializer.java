@@ -12,7 +12,7 @@ public class XMLSerializer {
     public void serializeAll(Dokument dokument)
     {
         try (FileWriter fw = new FileWriter("outputFW.xml");
-             OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("output.xml"), "UTF-8");)
+             OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("car_database.xml"), "UTF-8");)
         {
             JAXBContext ctx = JAXBContext.newInstance(Dokument.class);
             Marshaller mrs = ctx.createMarshaller();

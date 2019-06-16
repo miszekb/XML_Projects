@@ -6,7 +6,7 @@ import GUI.*;
 public class MainClass {
     public static void main(String[] args){
 
-    MainWindow mainWindow = new MainWindow();
+        MainWindow mainWindow = new MainWindow();
 
         Dokument dok = new Dokument();
 
