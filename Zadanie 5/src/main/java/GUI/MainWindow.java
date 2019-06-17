@@ -3,6 +3,7 @@ package GUI;
 import STRUCTURE.*;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,34 +12,38 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class MainWindow extends JPanel{
+public class MainWindow extends JPanel {
 
     private JTable samochody;
     private JTable marki;
-
+    private JTextField fieldID = new JTextField("Wprowadź ID elementu do usunięcia");
     private JButton serializujButton = new JButton("Serializuj");
     private JButton deserializujButton = new JButton("Deserializuj");
     private JButton transformujButton = new JButton("Transformuj do HTML");
     private JButton refreshButton = new JButton("Odśwież");
     private JButton usunButton = new JButton("Usuń");
-
+    private JScrollPane jps;
+    private JScrollPane jps2;
     private JLabel bazaLabel = new JLabel("Baza aut");
     private JLabel markiLabel = new JLabel("Baza marek");
+
     public XMLSerializer xmlSerializer = new XMLSerializer();
     public XSLTransformer xslTransformer = new XSLTransformer();
     public Dokument dokument;
 
     public MainWindow() {
-        dokument = new Dokument();
+        initialize();
+    }
+
+
+    public void initialize() {
+        //dokument = new Dokument();
         dokument = xmlSerializer.deserializeAll();
-        String[] samochodyColumns = {"ID", "Marka", "Model", "Kraj", "Rocznik", "Typ", "Przebieg[km]", "Rodzaj silnika", "Pojemność[l]", "Cena", "Waluta", "Data"};
-        String[][] samochodyDane = new String[dokument.getBaza().getSamochody().size()][12];
-        String[] markiColumns = {"ID", "Koncern", "Rok założenia"};
+        String[][] samochodyDane = new String[dokument.getBaza().getSamochody().size() + 1][12];
         String[][] markiDane = new String[dokument.getMarki().getMarki().size() + 1][3];
 
-
         int i = 0;
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        final DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
 
         for (Samochod samochod : dokument.getBaza().getSamochody()) {
 
@@ -69,17 +74,20 @@ public class MainWindow extends JPanel{
             i++;
         }
 
+        String[] markiColumns = {"ID", "Koncern", "Rok założenia"};
+        String[] samochodyColumns = {"ID", "Marka", "Model", "Kraj", "Rocznik", "Typ", "Przebieg[km]", "Rodzaj silnika", "Pojemność[l]", "Cena", "Waluta", "Data"};
+
         samochody = new JTable(samochodyDane, samochodyColumns);
-        samochody.setPreferredScrollableViewportSize(new Dimension(800,300));
+        samochody.setPreferredScrollableViewportSize(new Dimension(800, 300));
         samochody.setFillsViewportHeight(true);
-        JScrollPane jps = new JScrollPane(samochody);
+        jps = new JScrollPane(samochody);
         add(bazaLabel);
         add(jps);
 
         marki = new JTable(markiDane, markiColumns);
-        marki.setPreferredScrollableViewportSize(new Dimension(400,300));
+        marki.setPreferredScrollableViewportSize(new Dimension(400, 300));
         marki.setFillsViewportHeight(true);
-        JScrollPane jps2 = new JScrollPane(marki);
+        jps2 = new JScrollPane(marki);
         add(markiLabel);
         add(jps2);
         add(serializujButton);
@@ -87,29 +95,97 @@ public class MainWindow extends JPanel{
         add(transformujButton);
         add(refreshButton);
         add(usunButton);
+        add(fieldID);
+
+        refreshButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                refresh();
+            }
+        });
+
+        deserializujButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dokument = xmlSerializer.deserializeAll();
+                refresh();
+            }
+        });
+
+        usunButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(dokument.getMarki().toString());
+
+                Marka markaDoUsuniecia = null;
+                Samochod samochodDoUsuniecia = null;
+
+                for(Marka marka : dokument.getMarki().getMarki()) {
+                    if(marka.getID().equals(fieldID.getText())) {
+                        System.out.println("HALO");
+                        markaDoUsuniecia = marka;
+                    }
+                }
+
+                dokument.getMarki().getMarki().remove(markaDoUsuniecia);
+                dokument.getBaza().getSamochody().remove(samochodDoUsuniecia);
+
+                //xmlSerializer.serializeAll(dokument);
+                refresh();
+
+            }
+        });
 
         transformujButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               xslTransformer.transform();
+                xslTransformer.transform();
             }
         });
 
         serializujButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                dokument = new Dokument();
                 String[][] currentData = new String[marki.getRowCount()][3];
-                for(int i = 0; i < marki.getRowCount(); i++) {
-                    currentData[i][0] = (String)marki.getValueAt(i , 0);
-                    currentData[i][1] = (String)marki.getValueAt(i , 1);
-                    currentData[i][2] = (String)marki.getValueAt(i , 2);
+                System.out.println(marki.getRowCount());
+                for (int i = 0; i < marki.getRowCount(); i++) {
 
-                    dokument.addToMarki(new Marka(currentData[i][0], currentData[i][1],Integer.parseInt(currentData[i][2])));
+                    if (i == marki.getRowCount() - 1) {
+                        if (marki.getValueAt(i, 0) == null
+                                || marki.getValueAt(i, 1) == null
+                                || marki.getValueAt(i, 2) == null) {
+                            break;
+                        }
+                    }
+
+                    currentData[i][0] = (String) marki.getValueAt(i, 0);
+                    currentData[i][1] = (String) marki.getValueAt(i, 1);
+                    currentData[i][2] = (String) marki.getValueAt(i, 2);
+
+                    dokument.addToMarki(new Marka(currentData[i][0], currentData[i][1], Integer.parseInt(currentData[i][2])));
                 }
 
                 String[][] currentData2 = new String[samochody.getRowCount()][12];
 
-                for(int i = 0; i < samochody.getRowCount(); i++) {
+                for (int i = 0; i < samochody.getRowCount(); i++) {
+
+                    if (i == samochody.getRowCount() - 1) {
+                        if (samochody.getValueAt(i, 0) == null
+                                || samochody.getValueAt(i, 1) == null
+                                || samochody.getValueAt(i, 2) == null
+                                || samochody.getValueAt(i, 3) == null
+                                || samochody.getValueAt(i, 4) == null
+                                || samochody.getValueAt(i, 5) == null
+                                || samochody.getValueAt(i, 6) == null
+                                || samochody.getValueAt(i, 7) == null
+                                || samochody.getValueAt(i, 8) == null
+                                || samochody.getValueAt(i, 9) == null
+                                || samochody.getValueAt(i, 10) == null
+                                || samochody.getValueAt(i, 11) == null) {
+                            break;
+                        }
+                    }
                     currentData2[i][0] = (String) samochody.getValueAt(i, 0);
                     currentData2[i][1] = (String) samochody.getValueAt(i, 1);
                     currentData2[i][2] = (String) samochody.getValueAt(i, 2);
@@ -129,13 +205,15 @@ public class MainWindow extends JPanel{
                                 currentData2[i][5], Integer.parseInt(currentData2[i][6]), currentData2[i][7],
                                 Float.parseFloat(currentData2[i][8]), new Cena(Integer.parseInt(currentData2[i][9]), currentData2[i][10]),
                                 new SimpleDateFormat("yyyy-mm-dd hh:mm:ss").parse(currentData2[i][11])));
-                    }
-                    catch (Exception exception) {
+                    } catch (Exception exception) {
                         System.out.println(exception.getMessage());
                     }
+
                 }
                 int j = 0;
-                for(Marka marka : dokument.getMarki().getMarki()) {
+                System.out.println(dokument.getMarki().toString());
+
+                for (Marka marka : dokument.getMarki().getMarki()) {
                     System.out.println(j);
                     marka.setID(currentData[j][0]);
                     marka.setKoncern(currentData[j][1]);
@@ -146,21 +224,25 @@ public class MainWindow extends JPanel{
                 xmlSerializer.serializeAll(dokument);
             }
         });
-    }
-
-    public static void main(String[] args) {
-        MainWindow mainWindow = new MainWindow();
-        mainWindow.xmlSerializer = new XMLSerializer();
-        mainWindow.dokument = new Dokument();
-        JFrame mainFrame = new JFrame();
-        mainFrame.setSize(1000,800);
-        mainFrame.setLayout(null);
-        mainFrame.setContentPane(mainWindow);
-        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.pack();
-        mainFrame.setVisible(true);
 
     }
 
+    public void refresh() {
+        remove(samochody);
+        remove(bazaLabel);
+        remove(marki);
+        remove(markiLabel);
+        remove(serializujButton);
+        remove(deserializujButton);
+        remove(transformujButton);
+        remove(refreshButton);
+        remove(usunButton);
+        remove(jps);
+        remove(jps2);
+
+        initialize();
+        revalidate();
+        repaint();
+    }
 
 }

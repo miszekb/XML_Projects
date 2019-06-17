@@ -23,4 +23,14 @@ public class Marki {
         this.marki = marki;
     }
 
+    @Override
+    public String toString() {
+        String temp = "";
+        for(Marka marka : marki) {
+            temp += marka.getID() + "\n";
+        }
+
+        return temp;
+    }
+
 }
