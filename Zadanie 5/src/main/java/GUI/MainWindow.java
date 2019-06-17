@@ -15,6 +15,7 @@ import java.util.Date;
 public class MainWindow extends JPanel {
 
     private int markaDoUsuniecia = 9999;
+    private int samochodDoUsuniecia = 9999;
     private JTable samochody;
     private JTable marki;
     private JTextField fieldID = new JTextField("Wprowadź ID elementu do usunięcia");
@@ -55,7 +56,6 @@ public class MainWindow extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 //System.out.println(dokument.getMarki().toString());
 
-                Samochod samochodDoUsuniecia = null;
 
                 for(Marka marka : dokument.getMarki().getMarki()) {
                     if(marka.getID().equals(fieldID.getText())) {
@@ -64,13 +64,13 @@ public class MainWindow extends JPanel {
                     }
                 }
 
-
-                if(markaDoUsuniecia != 9999) {
-                    System.out.println("usuwam " + dokument.getMarki().getMarki().remove(markaDoUsuniecia));
+                for(Samochod samochod : dokument.getBaza().getSamochody()) {
+                    if(samochod.getID().equals(fieldID.getText())) {
+                        System.out.println(dokument.getBaza().getSamochody().indexOf(samochod));
+                        samochodDoUsuniecia = dokument.getBaza().getSamochody().indexOf(samochod);
+                    }
                 }
-                // System.out.println(dokument.getBaza().getSamochody().remove(samochodDoUsuniecia));
 
-                //xmlSerializer.serializeAll(dokument);
                 refresh();
 
             }
@@ -180,6 +180,11 @@ public class MainWindow extends JPanel {
             System.out.println("KKKKKKKK");
             System.out.println(dokument.getMarki().getMarki().remove(markaDoUsuniecia));
             markaDoUsuniecia = 9999;
+        }
+
+        if(samochodDoUsuniecia != 9999) {
+            System.out.println(dokument.getBaza().getSamochody().remove(samochodDoUsuniecia));
+            samochodDoUsuniecia = 9999;
         }
 
         String[][] samochodyDane = new String[dokument.getBaza().getSamochody().size() + 1][12];

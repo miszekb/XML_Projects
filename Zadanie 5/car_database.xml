@@ -212,17 +212,6 @@
             <cena waluta="PLN">24900</cena>
             <data_umieszczenia_ogłoszenia>2019-01-09T00:00:00+01:00</data_umieszczenia_ogłoszenia>
         </samochód>
-        <samochód ID="auto20">
-            <marka_auta markaID="M8"/>
-            <model kraj="Włochy">500</model>
-            <rocznik>2013</rocznik>
-            <typ>Auta małe</typ>
-            <przebieg>26556</przebieg>
-            <rodzaj_silnika>Elektryczny</rodzaj_silnika>
-            <pojemność_silnika>0.0</pojemność_silnika>
-            <cena waluta="PLN">68900</cena>
-            <data_umieszczenia_ogłoszenia>2018-01-21T00:00:00+01:00</data_umieszczenia_ogłoszenia>
-        </samochód>
         <samochód ID="auto21">
             <marka_auta markaID="M20"/>
             <model kraj="USA">Camaro</model>
@@ -316,10 +305,6 @@
         <marka markaID="M14">
             <koncern>Opel</koncern>
             <rok_założenia>1862</rok_założenia>
-        </marka>
-        <marka markaID="M15">
-            <koncern>Alfa Romeo</koncern>
-            <rok_założenia>1910</rok_założenia>
         </marka>
         <marka markaID="M16">
             <koncern>Nissan</koncern>
