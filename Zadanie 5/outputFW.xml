@@ -267,17 +267,6 @@
             <cena waluta="PLN">624865</cena>
             <data_umieszczenia_ogłoszenia>2018-01-11T00:00:00+01:00</data_umieszczenia_ogłoszenia>
         </samochód>
-        <samochód ID="auto25">
-            <marka_auta markaID="asd"/>
-            <model kraj="asd">asd</model>
-            <rocznik>123</rocznik>
-            <typ>sad</typ>
-            <przebieg>123</przebieg>
-            <rodzaj_silnika>asd</rodzaj_silnika>
-            <pojemność_silnika>1.2</pojemność_silnika>
-            <cena waluta="GBP">323</cena>
-            <data_umieszczenia_ogłoszenia>2018-01-11T00:00:00+01:00</data_umieszczenia_ogłoszenia>
-        </samochód>
     </baza>
     <marki>
         <marka markaID="M1">
@@ -311,10 +300,6 @@
         <marka markaID="M9">
             <koncern>Porsche</koncern>
             <rok_założenia>1931</rok_założenia>
-        </marka>
-        <marka markaID="M10">
-            <koncern>Kia</koncern>
-            <rok_założenia>1944</rok_założenia>
         </marka>
         <marka markaID="M11">
             <koncern>Subaru</koncern>
@@ -357,28 +342,8 @@
             <rok_założenia>1911</rok_założenia>
         </marka>
         <marka markaID="M21">
-            <koncern>Fiacik</koncern>
-            <rok_założenia>1920</rok_założenia>
-        </marka>
-        <marka markaID="M22">
-            <koncern>Nowy</koncern>
-            <rok_założenia>1893</rok_założenia>
-        </marka>
-        <marka markaID="M23">
-            <koncern>aaa</koncern>
-            <rok_założenia>123213</rok_założenia>
-        </marka>
-        <marka markaID="M24">
-            <koncern>sdsa</koncern>
-            <rok_założenia>12323</rok_założenia>
-        </marka>
-        <marka markaID="M25">
-            <koncern>dsd</koncern>
-            <rok_założenia>123</rok_założenia>
-        </marka>
-        <marka markaID="M26">
-            <koncern>qwe</koncern>
-            <rok_założenia>1243</rok_założenia>
+            <koncern>ads</koncern>
+            <rok_założenia>1902</rok_założenia>
         </marka>
     </marki>
 </dokument>

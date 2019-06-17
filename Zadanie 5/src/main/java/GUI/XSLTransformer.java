@@ -2,6 +2,7 @@ package GUI;
 
 import STRUCTURE.Dokument;
 
+import javax.swing.*;
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
@@ -32,9 +33,11 @@ public class XSLTransformer {
             Source xml_src = new StreamSource(xml_isr);
             Result out = new StreamResult(osw);
             transformer.transform(xml_src, out);
+            JOptionPane.showMessageDialog(null, "Transformacja do HTML przebiegła pomyślnie");
+
         }
         catch (Exception exception) {
-            System.out.println(exception.getMessage());
+            JOptionPane.showMessageDialog(null, exception.getMessage());
         }
     }
 }

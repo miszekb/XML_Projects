@@ -2,6 +2,7 @@ package GUI;
 
 import STRUCTURE.Dokument;
 
+import javax.swing.*;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
@@ -21,6 +22,7 @@ public class XMLSerializer {
             mrs.marshal(dokument, fw);
             mrs.marshal(dokument, osw);
             mrs.marshal(dokument, System.out);
+
         }
         catch (Exception exception) {
             System.out.println(exception.getCause());
@@ -36,6 +38,7 @@ public class XMLSerializer {
             Unmarshaller unmrs = ctx.createUnmarshaller();
 
             Object dok = unmrs.unmarshal(osw);
+
             return (Dokument)dok;
 
         }
