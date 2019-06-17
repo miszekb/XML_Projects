@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <fo:layout-master-set>
+        <fo:simple-page-master page-height="297mm" page-width="210mm" margin="5mm 15mm 5mm 15mm" master-name="moja-strona">
+            <fo:region-body margin="20mm 0mm 20mm 0mm"/>
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    <fo:page-sequence master-reference="moja-strona">
+        <fo:flow flow-name="xsl-region-body">
+            <fo:block text-align="left" font-size="10pt" margin-bottom="40px">
+						Przeglądasz obecnie bazę samochodów wraz z ich podstawowymi parametrami
+						sporządzoną w ramach przedmiotu "Programowanie Komunikacji Człowiek-Komputer".
+						Dane pochodzą z serwisu z ogłoszeniami otomoto.pl
+					</fo:block>
+            <fo:block text-align="center" font-size="13pt" margin-top="20px" font-weight="bold">
+						Baza marek
+					</fo:block>
+            <fo:table table-layout="fixed" font-size="10pt" border-width="thin" background-color="#fff5cc">
+                <fo:table-column column-width="22px"/>
+                <fo:table-column column-width="60px"/>
+                <fo:table-column column-width="auto"/>
+                <fo:table-header text-align="center" background-color="#ffd11a">
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">ID</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Koncern</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Rok założenia</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-header>
+                <fo:table-body>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Volkswagen</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1931</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M2</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>BMW</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1916</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M3</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Toyota</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1937</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M4</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Audi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1909</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M5</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Mini</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1959</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M6</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Jaguar</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1922</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M8</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Fiat</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1899</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M9</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Porsche</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1931</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M11</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Subaru</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1953</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M12</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Mazda</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1920</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M13</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Skoda</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1895</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M14</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Opel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1862</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M16</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Nissan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1933</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M17</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Jeep</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1941</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M18</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Iveco</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1975</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M19</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Man</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1758</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M20</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Chevrolet</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1911</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>M21</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>ads</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1902</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-body>
+            </fo:table>
+            <fo:block text-align="center" font-size="13pt" margin-top="20px" font-weight="bold">
+						Baza samochodów
+					</fo:block>
+            <fo:table table-layout="fixed" font-size="10pt" border-width="thin" background-color="#fff5cc">
+                <fo:table-column column-width="22px"/>
+                <fo:table-column column-width="60px"/>
+                <fo:table-column column-width="auto"/>
+                <fo:table-header text-align="center" background-color="#ffd11a">
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Model</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Rocznik</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Typ</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Przebieg</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Rodzaj silnika</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Pojemność silnika</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Cena</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block font-weight="bold">Data</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-header>
+                <fo:table-body>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Sharan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2008</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Minivan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>248000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1.8</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>26700</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-30T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Auris</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2016</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Kombi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>59500</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1.6</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>52900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-27T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>A4</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Kombi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>3.2</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>165914</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-19T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>X6</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2008</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>SUV</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>110000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>4.0</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>89900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-04T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Cooper S</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2007</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Auta małe</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>150000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>0.8</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>30000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-03T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Giulietta</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2012</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Kompakt</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>144000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1.2</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>41800</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-25T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>F-Pace</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>SUV</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>5500</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>5.0</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>230000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-23T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Grand Cherokee IV</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2011</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>SUV</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>196000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>5.5</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>649000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-22T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Magirus</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1984</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Tir</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>436581</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>7.0</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>29000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-12T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>aaaa</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2013</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Kombi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>167000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1.3</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>22555</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-04T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>A6 C6</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2010</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Sedan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>162000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>5.2</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>45900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-28T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>6 III</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2014</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Sedan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>223000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>3.8</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>49500</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-01T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Qashqai II</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>SUV</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2.9</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>91900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-09T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Astra K</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Kombi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2.5</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>99900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-05T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>TGX</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2015</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Tir</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>400000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>8.1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>120500</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-30T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Caravelle</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Minivan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>7</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>3.4</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>108060</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-21T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Optima</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2015</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Sedan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>109870</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>3.1</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>58000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-26T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Legacy IV</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2008</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Kombi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>294500</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>3.5</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>24900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-09T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Camaro</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2013</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Coupe</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>94901</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>5.3</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>49999</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-25T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Insignia B</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2017</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Kombi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>42600</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diesel</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2.6</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>91900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2019-01-06T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Diablo II</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2016</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Minivan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>59945</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>1.8</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>49900</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-17T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                    <fo:table-row>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Panamera</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2017</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Sedan</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>34000</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>Benzyna</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>5.5</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>624865</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell padding="1mm" border-width="thin" border-style="solid">
+                            <fo:block>2018-01-11T00:00:00+01:00</fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-body>
+            </fo:table>
+        </fo:flow>
+    </fo:page-sequence>
+</fo:root>

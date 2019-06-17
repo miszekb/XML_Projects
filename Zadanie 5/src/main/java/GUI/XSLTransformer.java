@@ -29,11 +29,35 @@ public class XSLTransformer {
         {
             Source xsl_src = new StreamSource(xsl_isr);
             Transformer transformer = factory.newTransformer(xsl_src);
-
             Source xml_src = new StreamSource(xml_isr);
             Result out = new StreamResult(osw);
             transformer.transform(xml_src, out);
             JOptionPane.showMessageDialog(null, "Transformacja do HTML przebiegła pomyślnie");
+
+        }
+        catch (Exception exception) {
+            JOptionPane.showMessageDialog(null, exception.getMessage());
+        }
+    }
+
+    public void transformFO() {
+
+        TransformerFactory factory = TransformerFactory.newInstance();
+
+        try (InputStreamReader xsl_isr = new InputStreamReader(
+                new FileInputStream("transformPDF.xsl"), "UTF-8");
+             InputStreamReader xml_isr = new InputStreamReader(
+                     new FileInputStream("car_database.xml"), "UTF-8");
+             OutputStreamWriter osw = new OutputStreamWriter(
+                     new FileOutputStream("transformFO.xml"), "UTF-8"); )
+        {
+            Source xsl_src = new StreamSource(xsl_isr);
+            Transformer transformer = factory.newTransformer(xsl_src);
+
+            Source xml_src = new StreamSource(xml_isr);
+            Result out = new StreamResult(osw);
+            transformer.transform(xml_src, out);
+            JOptionPane.showMessageDialog(null, "Transformacja do FO przebiegła pomyślnie");
 
         }
         catch (Exception exception) {

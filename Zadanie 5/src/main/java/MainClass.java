@@ -11,10 +11,11 @@ public class MainClass {
             mainWindow.xmlSerializer = new XMLSerializer();
             mainWindow.dokument = new Dokument();
             JFrame mainFrame = new JFrame();
-            mainFrame.setSize(1400,420);
+            mainFrame.setSize(1220,420);
             mainFrame.setLayout(null);
             mainFrame.setContentPane(mainWindow);
             mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             mainFrame.setVisible(true);
+            mainFrame.setTitle("PKCK ZAD 5");
     }
 }

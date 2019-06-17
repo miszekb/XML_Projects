@@ -69,17 +69,6 @@
             <cena waluta="PLN">41800</cena>
             <data_umieszczenia_ogłoszenia>2018-01-25T00:00:00+01:00</data_umieszczenia_ogłoszenia>
         </samochód>
-        <samochód ID="auto7">
-            <marka_auta markaID="M1"/>
-            <model kraj="Niemcy">Touareg</model>
-            <rocznik>2010</rocznik>
-            <typ>SUV</typ>
-            <przebieg>367862</przebieg>
-            <rodzaj_silnika>Diesel</rodzaj_silnika>
-            <pojemność_silnika>3.5</pojemność_silnika>
-            <cena waluta="PLN">59500</cena>
-            <data_umieszczenia_ogłoszenia>2019-01-07T00:00:00+01:00</data_umieszczenia_ogłoszenia>
-        </samochód>
         <samochód ID="auto8">
             <marka_auta markaID="M6"/>
             <model kraj="Wielka_Brytania">F-Pace</model>
@@ -115,7 +104,7 @@
         </samochód>
         <samochód ID="auto11">
             <marka_auta markaID="M13"/>
-            <model kraj="Czechy">Fabia II</model>
+            <model kraj="Czechy">aaaa</model>
             <rocznik>2013</rocznik>
             <typ>Kombi</typ>
             <przebieg>167000</przebieg>
@@ -134,17 +123,6 @@
             <pojemność_silnika>5.2</pojemność_silnika>
             <cena waluta="PLN">45900</cena>
             <data_umieszczenia_ogłoszenia>2018-01-28T00:00:00+01:00</data_umieszczenia_ogłoszenia>
-        </samochód>
-        <samochód ID="auto13">
-            <marka_auta markaID="M12"/>
-            <model kraj="Japonia">6 III</model>
-            <rocznik>2014</rocznik>
-            <typ>Sedan</typ>
-            <przebieg>223000</przebieg>
-            <rodzaj_silnika>Benzyna</rodzaj_silnika>
-            <pojemność_silnika>3.8</pojemność_silnika>
-            <cena waluta="PLN">49500</cena>
-            <data_umieszczenia_ogłoszenia>2019-01-01T00:00:00+01:00</data_umieszczenia_ogłoszenia>
         </samochód>
         <samochód ID="auto14">
             <marka_auta markaID="M16"/>

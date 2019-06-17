@@ -19,16 +19,16 @@ public class MainWindow extends JPanel {
     private JTable samochody;
     private JTable marki;
     private JTextField fieldID = new JTextField("Wprowadź ID elementu do usunięcia");
-    private JButton serializujButton = new JButton("Serializuj");
+    private JButton serializujButton = new JButton("Zapisz");
     private JButton deserializujButton = new JButton("Deserializuj");
     private JButton transformujButton = new JButton("Transformuj do HTML");
+    private JButton transformujFOButton = new JButton("Transformuj do FO");
     private JButton refreshButton = new JButton("Odśwież");
     private JButton usunButton = new JButton("Usuń");
     private JScrollPane jps;
     private JScrollPane jps2;
     private JLabel bazaLabel = new JLabel("Baza aut");
     private JLabel markiLabel = new JLabel("Baza marek");
-
     public XMLSerializer xmlSerializer = new XMLSerializer();
     public XSLTransformer xslTransformer = new XSLTransformer();
     public Dokument dokument;
@@ -80,6 +80,13 @@ public class MainWindow extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 xslTransformer.transform();
+            }
+        });
+
+        transformujFOButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                xslTransformer.transformFO();
             }
         });
 
@@ -166,7 +173,7 @@ public class MainWindow extends JPanel {
 
                 xmlSerializer.serializeAll(dokument);
                 JOptionPane.showMessageDialog(null, "Serializacja przebiegła pomyślnie");
-
+                refresh();
             }
         });
     }
@@ -177,7 +184,6 @@ public class MainWindow extends JPanel {
         dokument = xmlSerializer.deserializeAll();
 
         if(markaDoUsuniecia != 9999) {
-            System.out.println("KKKKKKKK");
             System.out.println(dokument.getMarki().getMarki().remove(markaDoUsuniecia));
             markaDoUsuniecia = 9999;
         }
@@ -233,7 +239,7 @@ public class MainWindow extends JPanel {
         add(jps);
 
         marki = new JTable(markiDane, markiColumns);
-        marki.setPreferredScrollableViewportSize(new Dimension(400, 300));
+        marki.setPreferredScrollableViewportSize(new Dimension(220, 300));
         marki.setFillsViewportHeight(true);
         jps2 = new JScrollPane(marki);
         add(markiLabel);
@@ -241,9 +247,11 @@ public class MainWindow extends JPanel {
         add(serializujButton);
         add(deserializujButton);
         add(transformujButton);
+        add(transformujFOButton);
         add(refreshButton);
         add(usunButton);
         add(fieldID);
+        setBackground(new Color(255, 255, 153));
     }
 
     public void refresh() {
